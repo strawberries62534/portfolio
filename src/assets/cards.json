@@ -30,7 +30,23 @@
       "description": "An old-deprecated multifunctional discord bot wrote in javascript during pandemic. It was my first programming project.",
       "importance": "30",
       "preview": "/src/assets/shinybot.png",
-      "file": "https://cdn.discordapp.com/attachments/851501348775657543/1130235288329920572/Cool_Girl.png"
+      "file": "https://github.com/eiiko6/ShinyBot"
+    },
+    {
+      "id": 5,
+      "name": "Flappigeon",
+      "description": "A small mobile game made with Unity. It was a collab with an artist friend.",
+      "importance": "20",
+      "preview": "/src/assets/flappigeon.png",
+      "file": "#"
+    },
+    {
+      "id": 6,
+      "name": "Linux theme switcher",
+      "description": "A small bash script that allows you to quickly and seemlessly switch between multiple dotfiles configurations.",
+      "importance": "45",
+      "preview": "/src/assets/themeswitcher.png",
+      "file": "https://github.com/eiiko6/theme-switcher"
     }
   ]
 }
