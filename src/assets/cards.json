@@ -47,6 +47,14 @@
       "importance": "45",
       "preview": "/src/assets/themeswitcher.png",
       "file": "https://github.com/eiiko6/theme-switcher"
+    },
+    {
+      "id": 7,
+      "name": "Arch Linux installation script",
+      "description": "A shell script that does a minimal Arch installation for you, on any drive specified.",
+      "importance": "60",
+      "preview": "/src/assets/archinstall.png",
+      "file": "https://github.com/eiiko6/arch-installer"
     }
   ]
 }

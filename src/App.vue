@@ -41,8 +41,8 @@ export default {
 
 #content {
   margin-top: 140px;
-  max-width: 58%;
-  padding: 3rem;
+  max-width: 70%;
+  padding: 4rem;
   padding-bottom: 10px;
   padding-top: 15px;
   margin-bottom: 50px;

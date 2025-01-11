@@ -28,18 +28,6 @@ section {
   margin-bottom: 60px;
 }
 
-.logo {
-  height: 18em;
-  will-change: filter;
-  transition: 300ms;
-  border: 3px solid #6785bf55;
-  border-radius: 20px;
-  opacity: 82%;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #8776d677);
-}
-
 span {
   color: #8776d6;
 }
@@ -56,9 +44,11 @@ button {
   backdrop-filter: blur(300px);
   border: 2px solid #6785bf55;
 }
+
 button:hover {
   border-color: #6785bfff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -111,6 +101,7 @@ a {
   color: #ac7ffa;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -126,7 +117,10 @@ table {
   margin-bottom: 30px;
 }
 
-ul, li, td, th {
+ul,
+li,
+td,
+th {
   text-align: left;
   margin: 5px;
 }
@@ -136,7 +130,9 @@ td {
   max-width: 50%;
 }
 
-table, td, th {
+table,
+td,
+th {
   text-align: center;
   font-size: 1.2em;
   border: 2px solid #ffffffaa;

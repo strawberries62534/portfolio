@@ -49,7 +49,7 @@ export default {
   min-width: 350px;
   border: 3px solid #6785bf55;
   border-radius: 15px;
-  margin: 20px;
+  margin: 10px;
   align-self: flex-start;
   overflow: hidden;
   font-size: 25px;
