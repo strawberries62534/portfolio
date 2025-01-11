@@ -1,16 +1,16 @@
 <template>
   <div id="navbar">
-    <router-link to="/" title="Accueil">
+    <router-link to="/" title="Home">
       <i class="fas fa-home"></i>
     </router-link>
     <p class="dot">⬤</p>
-    <router-link to="/about-me" title="about-me">
+    <router-link to="/about-me" title="About me">
       <i class="fas fa-circle-info"></i>
     </router-link>
-    <router-link to="/gallery" title="gallery">
+    <router-link to="/gallery" title="Gallery">
       <i class="fas fa-book"></i>
     </router-link>
-    <router-link to="/contact" title="contact">
+    <router-link to="/contact" title="Contact">
       <i class="fas fa-comment"></i>
     </router-link>
   </div>

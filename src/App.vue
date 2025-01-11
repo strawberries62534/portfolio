@@ -35,6 +35,7 @@ import Navbar from './components/Navbar.vue'
   max-width: 58%;
   padding: 3rem;
   padding-bottom: 10px;
+  padding-top: 15px;
   margin-bottom: 50px;
   background-color: #151d2468;
   backdrop-filter: blur(300px);
