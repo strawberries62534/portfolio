@@ -5,7 +5,7 @@
       "name": "Linux Dotfiles",
       "description": "My dynamically-themed Linux dotfiles and config script for my every-day workflow using Hyprland. Meant to be easily installed on any base Arch installation.",
       "importance": "100",
-      "preview": "/src/assets/dotfiles.png",
+      "preview": "/dotfiles.png",
       "file": "https://github.com/eiiko6/dotfiles"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Spotify Data",
       "description": "A front-end app wrote in typescript that fetches data from your Spotify account.",
       "importance": "50",
-      "preview": "/src/assets/spotistats.png",
+      "preview": "/spotistats.png",
       "file": "https://github.com/eiiko6/spotify-data"
     },
     {
@@ -21,7 +21,7 @@
       "name": "RPG battle player",
       "description": "A python app that animates battles with init settings. It was made for a big RPG game in school.",
       "importance": "40",
-      "preview": "/src/assets/rpg.png",
+      "preview": "/rpg.png",
       "file": "https://github.com/eiiko6/DOPJB-2024"
     },
     {
@@ -29,7 +29,7 @@
       "name": "ShinyBot",
       "description": "An old-deprecated multifunctional discord bot wrote in javascript during pandemic. It was my first programming project.",
       "importance": "30",
-      "preview": "/src/assets/shinybot.png",
+      "preview": "/shinybot.png",
       "file": "https://github.com/eiiko6/ShinyBot"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Flappigeon",
       "description": "A small mobile game made with Unity. It was a collab with an artist friend.",
       "importance": "20",
-      "preview": "/src/assets/flappigeon.png",
+      "preview": "/flappigeon.png",
       "file": "#"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Linux theme switcher",
       "description": "A small bash script that allows you to quickly and seemlessly switch between multiple dotfiles configurations.",
       "importance": "45",
-      "preview": "/src/assets/themeswitcher.png",
+      "preview": "/themeswitcher.png",
       "file": "https://github.com/eiiko6/theme-switcher"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Arch Linux installation script",
       "description": "A shell script that does a minimal Arch installation for you, on any drive specified.",
       "importance": "60",
-      "preview": "/src/assets/archinstall.png",
+      "preview": "/archinstall.png",
       "file": "https://github.com/eiiko6/arch-installer"
     }
   ]

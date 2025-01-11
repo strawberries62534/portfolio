@@ -32,7 +32,7 @@ export default {
   min-width: 100vw;
   /* Ensure the page spans full viewport height */
   text-align: center;
-  background-image: url('/src/assets/bubbles.png');
+  background-image: url('/bubbles.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
