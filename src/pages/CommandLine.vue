@@ -154,4 +154,12 @@ export default {
 .command {
   color: #68a0a7;
 }
+
+@media (max-width: 768px) {
+  div {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
 </style>

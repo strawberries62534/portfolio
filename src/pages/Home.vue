@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1><span>Welcome to My Portfolio</span></h1>
+    <Logos class="logo-scroller"></Logos>
     <div class="content">
-      <div class="intro">
+      <div id="intro">
         <p>
           Hi, I'm a 1st-year Computer Science student in the "BUT Informatique" program in Clermont-Ferrand
           (France).<br />
@@ -23,7 +24,6 @@
           inventore laboriosam?
         </p>
       </div>
-      <Logos></Logos>
     </div>
   </div>
 </template>
@@ -40,22 +40,29 @@ export default {
 
 <style scoped>
 .content {
-  display: flex;
-  gap: 10rem;
   width: 80%;
+  margin: 0 auto;
 }
 
-.intro {
-  flex: 1;
-}
-
-.intro h1 {
+#intro h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.intro p {
+#intro p {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.logo-scroller {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-scroller {
+    display: none;
+  }
 }
 </style>

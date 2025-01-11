@@ -1,23 +1,23 @@
 <template>
   <div id="navbar">
-    <router-link to="/" title="Home">
+    <router-link to="/" title="Home" active-class="active">
       <i class="fas fa-home"></i>
       <span>Home</span>
     </router-link>
     <p class="dot">⬤</p>
-    <router-link to="/about-me" title="About me">
+    <router-link to="/about-me" title="About me" active-class="active">
       <i class="fas fa-circle-info"></i>
       <span>About Me</span>
     </router-link>
-    <router-link to="/gallery" title="Gallery">
+    <router-link to="/gallery" title="Gallery" active-class="active">
       <i class="fas fa-book"></i>
       <span>Gallery</span>
     </router-link>
-    <router-link to="/contact" title="Contact">
+    <router-link to="/contact" title="Contact" active-class="active">
       <i class="fas fa-comment"></i>
       <span>Contact</span>
     </router-link>
-    <router-link to="/command-line" title="Command line">
+    <router-link to="/command-line" title="Command line" active-class="active">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>
       <span>Command Line</span>
     </router-link>
@@ -28,7 +28,7 @@
 #navbar {
   z-index: 10;
   background-color: #151d2468;
-  backdrop-filter: blur(300px);
+  backdrop-filter: blur(30px);
   position: fixed;
   top: 20px;
   left: 50%;
@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: center;
   height: 30px;
+  overflow: hidden;
 }
 
 #navbar a {
@@ -67,6 +68,14 @@
 #navbar a:hover i,
 #navbar a:hover span {
   color: #8776d6;
+}
+
+#navbar a.active i {
+  color: #7092d4;
+}
+
+#navbar a.active span {
+  color: #6785bf;
 }
 
 #navbar p {
