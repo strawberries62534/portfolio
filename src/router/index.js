@@ -6,11 +6,11 @@ import Contact from '../pages/Contact.vue';
 import CommandLine from '../pages/CommandLine.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about-me', component: AboutMe },
-  { path: '/gallery', component: Gallery },
-  { path: '/contact', component: Contact },
-  { path: '/command-line', component: CommandLine },
+  { path: '/portfolio', component: Home },
+  { path: '/portfolio/about-me', component: AboutMe },
+  { path: '/portfolio/gallery', component: Gallery },
+  { path: '/portfolio/contact', component: Contact },
+  { path: '/portfolio/command-line', component: CommandLine },
 ];
 
 const router = createRouter({

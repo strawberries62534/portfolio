@@ -1,23 +1,23 @@
 <template>
   <div id="navbar">
-    <router-link to="/" title="Home" active-class="active">
+    <router-link to="/portfolio/" title="Home" active-class="active">
       <i class="fas fa-home"></i>
       <span>Home</span>
     </router-link>
     <p class="dot">⬤</p>
-    <router-link to="/about-me" title="About me" active-class="active">
+    <router-link to="/portfolio/about-me" title="About me" active-class="active">
       <i class="fas fa-circle-info"></i>
       <span>About Me</span>
     </router-link>
-    <router-link to="/gallery" title="Gallery" active-class="active">
+    <router-link to="/portfolio/gallery" title="Gallery" active-class="active">
       <i class="fas fa-book"></i>
       <span>Gallery</span>
     </router-link>
-    <router-link to="/contact" title="Contact" active-class="active">
+    <router-link to="/portfolio/contact" title="Contact" active-class="active">
       <i class="fas fa-comment"></i>
       <span>Contact</span>
     </router-link>
-    <router-link to="/command-line" title="Command line" active-class="active">
+    <router-link to="/portfolio/command-line" title="Command line" active-class="active">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>
       <span>Command Line</span>
     </router-link>
