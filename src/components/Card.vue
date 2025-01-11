@@ -17,13 +17,7 @@
 
 <script>
 export default {
-  props: [
-    'name',
-    'description',
-    'date',
-    'preview',
-    'file'
-  ]
+  props: ['name', 'description', 'date', 'preview', 'file']
 }
 </script>
 
@@ -35,7 +29,7 @@ export default {
 
 .card:hover .card-bg {
   transform: scale(1.2);
-  filter: brightness(1) blur(5px);
+  filter: brightness(1) blur(0px);
 }
 
 .card:hover .true-content {
@@ -45,7 +39,7 @@ export default {
 
 .card:hover .popup {
   opacity: 1;
-  transform: scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .card {
@@ -60,6 +54,8 @@ export default {
   overflow: hidden;
   font-size: 25px;
   transition: .2s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-bg {
@@ -77,46 +73,42 @@ export default {
 
 .card-content {
   position: relative;
-  transition: .2s ease-out;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   color: rgba(255, 255, 255, 0.87);
   align-items: center;
   text-align: center;
-  height: 100%;
   z-index: 1;
 }
 
-.card-content .true-content {
-  margin-top: 10%;
-  margin-bottom: 20px;
+.true-content {
+  backdrop-filter: brightness(0.85) blur(100px);
+  padding-bottom: 16px;
+  padding-top: 16px;
+  margin-bottom: 0;
+  border-top: 3px solid #6785bf55;
+  transition: .3s ease-out;
 }
 
 .popup {
-  margin-top: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: .2s ease-out;
   opacity: 0;
-}
-
-img {
-  height: 150px;
-}
-
-.title {
-  margin-left: 30px;
-  margin-right: 30px;
+  text-align: center;
+  z-index: 2;
+  /* Ensure it appears above other elements */
 }
 
 h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 1.5em;
   text-align: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 p {
@@ -129,11 +121,6 @@ p {
   .card {
     height: 350px;
     margin: 8px;
-  }
-
-  .card-content .true-content {
-    margin-top: 0;
-    margin-bottom: 100px;
   }
 }
 </style>

@@ -29,6 +29,7 @@ export default {
   justify-content: flex-start;
   /* Adjusted for Navbar */
   min-height: 100vh;
+  min-width: 100vw;
   /* Ensure the page spans full viewport height */
   text-align: center;
   background-image: url('/src/assets/bubbles.png');

@@ -2,34 +2,34 @@
   "cards": [
     {
       "id": 1,
-      "name": "Card 1",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veniam.",
-      "date": "Jul 10, 2022",
-      "preview": "/src/assets/bubbles.png",
-      "file": "https://cdn.discordapp.com/attachments/851501348775657543/1130236878109560912/Clara_Cleo.png"
+      "name": "Linux Dotfiles",
+      "description": "My dynamically-themed Linux dotfiles and config script for my every-day workflow using Hyprland. Meant to be easily installed on any base Arch installation.",
+      "importance": "100",
+      "preview": "/src/assets/dotfiles.png",
+      "file": "https://github.com/eiiko6/dotfiles"
     },
     {
       "id": 2,
-      "name": "Card 2",
-      "description": "This could be an artwork or a project.",
-      "date": "Oct 2, 2022",
-      "preview": "/src/assets/bubbles.png",
-      "file": "https://cdn.discordapp.com/attachments/851501348775657543/1130250075990409286/Pigeons.png"
+      "name": "Spotify Data",
+      "description": "A front-end app wrote in typescript that fetches data from your Spotify account.",
+      "importance": "50",
+      "preview": "/src/assets/spotistats.png",
+      "file": "https://github.com/eiiko6/spotify-data"
     },
     {
       "id": 3,
-      "name": "Card 3",
-      "description": "Here's how to do quotes: \"hey!\".",
-      "date": "Dec 10, 2022",
-      "preview": "/src/assets/bubbles.png",
-      "file": "https://cdn.discordapp.com/attachments/851501348775657543/1130236875714592869/Monster.png"
+      "name": "RPG battle player",
+      "description": "A python app that animates battles with init settings. It was made for a big RPG game in school.",
+      "importance": "40",
+      "preview": "/src/assets/rpg.png",
+      "file": "https://github.com/eiiko6/DOPJB-2024"
     },
     {
       "id": 4,
-      "name": "Card 4",
-      "description": "Pretty long description to try how it displays on the card. Pretty long description to try how it displays on the card.",
-      "date": "Dec 10, 2022",
-      "preview": "/src/assets/bubbles.png",
+      "name": "ShinyBot",
+      "description": "An old-deprecated multifunctional discord bot wrote in javascript during pandemic. It was my first programming project.",
+      "importance": "30",
+      "preview": "/src/assets/shinybot.png",
       "file": "https://cdn.discordapp.com/attachments/851501348775657543/1130235288329920572/Cool_Girl.png"
     }
   ]

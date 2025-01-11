@@ -5,11 +5,9 @@
     <button @click="sort">Sort by: {{ sortBy }}</button>
 
     <div class="cards">
-
       <Card v-for="card in sortedCards" :key="card.id" :name="card.name" :description="card.description"
         :preview="card.preview" :file="card.file" />
       <div class="footer"></div>
-
     </div>
   </div>
 </template>
@@ -23,23 +21,23 @@ export default {
     Card
   },
   data() {
-    const sortedCards = cards.cards.sort((a, b) => b.id - a.id); // Sort cards in reverse order by ID,
+    // Sort cards by importance in descending order initially
+    const sortedCards = cards.cards.sort((a, b) => b.importance - a.importance);
     return {
       sortedCards: sortedCards,
-      sortBy: "date", // Initially sorting by "date"
+      sortBy: "importance",
     };
   },
   methods: {
     sort() {
-      if (this.sortBy === "date") {
-        this.sortedCards.sort((a, b) => {
-          // Sort by name in ascending order
-          return a.name.localeCompare(b.name);
-        });
-        this.sortBy = "name";
-      } else if (this.sortBy === "name") {
-        this.sortedCards.sort((a, b) => b.id - a.id); // Revert to the initial sorting by ID
-        this.sortBy = "date";
+      if (this.sortBy === "name") {
+        // Sort by importance in descending order (higher importance comes first)
+        this.sortedCards = [...cards.cards].sort((a, b) => b.importance - a.importance);
+        this.sortBy = "importance"; // Change sort type to name
+      } else if (this.sortBy === "importance") {
+        // Sort by name in ascending order
+        this.sortedCards = [...cards.cards].sort((a, b) => a.name.localeCompare(b.name));
+        this.sortBy = "name"; // Change sort type back to importance
       }
     },
   },
@@ -52,8 +50,8 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 15px;
 }
 </style>
