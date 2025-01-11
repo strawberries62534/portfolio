@@ -13,6 +13,9 @@
     <router-link to="/contact" title="Contact">
       <i class="fas fa-comment"></i>
     </router-link>
+    <router-link to="/command-line" title="Command line">
+      <i class="fas fa-terminal" style="font-size: 25px;"></i>
+    </router-link>
   </div>
 </template>
 

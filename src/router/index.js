@@ -3,12 +3,14 @@ import Home from '../pages/Home.vue';
 import AboutMe from '../pages/AboutMe.vue';
 import Gallery from '../pages/Gallery.vue';
 import Contact from '../pages/Contact.vue';
+import CommandLine from '../pages/CommandLine.vue';
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about-me', component: AboutMe },
   { path: '/gallery', component: Gallery },
   { path: '/contact', component: Contact },
+  { path: '/command-line', component: CommandLine },
 ];
 
 const router = createRouter({

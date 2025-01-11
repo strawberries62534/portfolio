@@ -47,8 +47,6 @@ export default {
 </script>
 
 <style scoped>
-h2 {}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
