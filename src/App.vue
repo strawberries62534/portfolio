@@ -1,17 +1,25 @@
-<script setup>
-import Navbar from './components/Navbar.vue'
-</script>
-
 <template>
   <div id="page">
     <Navbar></Navbar>
 
     <div id="content">
-      <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" :key="$route.path" />
+        </transition>
+      </router-view>
     </div>
 
   </div>
 </template>
+
+<script>
+import Navbar from './components/Navbar.vue'
+
+export default {
+  components: { Navbar }
+}
+</script>
 
 <style scoped>
 #page {
@@ -46,5 +54,15 @@ import Navbar from './components/Navbar.vue'
 
 Navbar {
   z-index: 2;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

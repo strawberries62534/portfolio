@@ -52,6 +52,7 @@ export default {
   position: relative;
   width: 400px;
   height: 500px;
+  min-width: 350px;
   border: 3px solid #6785bf55;
   border-radius: 15px;
   margin: 20px;
@@ -88,7 +89,8 @@ export default {
 }
 
 .card-content .true-content {
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-bottom: 20px;
 }
 
 .popup {
@@ -124,20 +126,14 @@ p {
 }
 
 @media screen and (max-width: 730px) {
-  .card-bg {
-    transform: scale(1.2);
-    filter: brightness(.75) blur(0);
+  .card {
+    height: 350px;
+    margin: 8px;
   }
 
-  .card:hover .popup {
-    margin-top: 55%;
-    transition: .2s ease-out;
-    opacity: 0;
-  }
-
-  .card:hover .true-content {
-    transition: .2s ease-out;
-    opacity: 100%;
+  .card-content .true-content {
+    margin-top: 0;
+    margin-bottom: 100px;
   }
 }
 </style>

@@ -1,12 +1,15 @@
 <template>
-  <section id="Introduction">
-    <img class="logo" src="/public/vite.svg" alt="logo" />
-    <h1><span>Portfolio</span></h1>
-    <h2>What is this?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos omnis laborum earum officiis
-      voluptatibus similique magni, inventore, ducimus dolore eum, excepturi non accusamus. Reprehenderit eius sapiente
-      quisquam recusandae nulla.</p>
-  </section>
+  <div>
+    <section id="Introduction">
+      <img class="logo" src="/public/vite.svg" alt="logo" />
+      <h1><span>Portfolio</span></h1>
+      <h2>What is this?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos omnis laborum earum officiis
+        voluptatibus similique magni, inventore, ducimus dolore eum, excepturi non accusamus. Reprehenderit eius
+        sapiente
+        quisquam recusandae nulla.</p>
+    </section>
+  </div>
 </template>
 
 <style scoped>

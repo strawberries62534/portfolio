@@ -1,14 +1,16 @@
 <template>
-  <h1 class="title"><span>Gallery</span></h1>
+  <div>
+    <h1 class="title"><span>Gallery</span></h1>
 
-  <button @click="sort">Sort by: {{ sortBy }}</button>
+    <button @click="sort">Sort by: {{ sortBy }}</button>
 
-  <div class="cards">
+    <div class="cards">
 
-    <Card v-for="card in sortedCards" :key="card.id" :name="card.name" :description="card.description"
-      :preview="card.preview" :file="card.file" />
-    <div class="footer"></div>
+      <Card v-for="card in sortedCards" :key="card.id" :name="card.name" :description="card.description"
+        :preview="card.preview" :file="card.file" />
+      <div class="footer"></div>
 
+    </div>
   </div>
 </template>
 
