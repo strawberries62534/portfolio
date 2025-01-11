@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242229;
+  background-image: url('/src/assets/bubbles.png'); /* Replace with your image path */
+  background-opacity: 20%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,13 +25,14 @@ body {
 
 
 #content {
-  max-width: 55%;
+  max-width: 58%;
   margin: 0 auto;
   padding: 3rem;
   padding-bottom: 0;
   text-align: center;
-  background-color: #39363d;
-  border: 3px solid #ffffff10;
+  background-color: #151d2468;
+  backdrop-filter: blur(100px);
+  border: 3px solid #6785bf55;
   border-radius: 18px;
   transform: translateY(140px);
 }
@@ -44,7 +46,7 @@ section {
   height: 18em;
   will-change: filter;
   transition: 300ms;
-  border: 3px solid #ffffff10;
+  border: 3px solid #6785bf55;
   border-radius: 20px;
   opacity: 82%;
 }

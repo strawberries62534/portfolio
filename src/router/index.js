@@ -6,9 +6,9 @@ import Contact from '../pages/Contact.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/attributs', component: AboutMe },
-  { path: '/environnement', component: Gallery },
-  { path: '/economie', component: Contact },
+  { path: '/about-me', component: AboutMe },
+  { path: '/gallery', component: Gallery },
+  { path: '/contact', component: Contact },
 ];
 
 const router = createRouter({

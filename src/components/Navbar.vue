@@ -4,14 +4,14 @@
       <i class="fas fa-home"></i>
     </router-link>
     <p class="dot">⬤</p>
-    <router-link to="/attributs" title="Attributs">
-      <i class="fas fa-newspaper"></i>
+    <router-link to="/about-me" title="about-me">
+      <i class="fas fa-circle-info"></i>
     </router-link>
-    <router-link to="/environnement" title="Environnement">
-      <i class="fas fa-leaf"></i>
+    <router-link to="/gallery" title="gallery">
+      <i class="fas fa-book"></i>
     </router-link>
-    <router-link to="/economie" title="Economie">
-      <i class="fas fa-coins"></i>
+    <router-link to="/contact" title="contact">
+      <i class="fas fa-comment"></i>
     </router-link>
   </div>
 </template>
@@ -19,14 +19,14 @@
 <style scoped>
 #navbar {
   z-index: 10;
-  background-color: #39363d77;
-  backdrop-filter: blur(18px);
+  background-color: #151d2468;
+  backdrop-filter: blur(100px);
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  border: 3px solid #ffffff10;
+  border: 3px solid #6785bf55;
   border-radius: 20px;
   padding: 20px 0;
   display: flex;
