@@ -64,5 +64,9 @@ export default {
   .logo-scroller {
     display: none;
   }
+
+  .content {
+    width: 92%;
+  }
 }
 </style>

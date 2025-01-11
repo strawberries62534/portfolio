@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <Navbar></Navbar>
+    <Navbar @link-clicked="showNotification"></Navbar>
 
     <div id="content">
       <router-view v-slot="{ Component }">
@@ -10,15 +10,57 @@
       </router-view>
     </div>
 
+    <NotificationPopup ref="notification" content="Tip: you can navigate pages with arrow keys!" />
+
+    <p id="footer">Made with ❤️ using Vue.js.</p>
   </div>
 </template>
 
 <script>
+import { onMounted, onUnmounted } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+
 import Navbar from './components/Navbar.vue'
+import NotificationPopup from "./components/NotificationPopup.vue";
 
 export default {
-  components: { Navbar }
-}
+  components: { Navbar, NotificationPopup },
+  methods: {
+    showNotification() {
+      this.$refs.notification.showPopup();
+    },
+  },
+
+  setup() {
+    const router = useRouter();
+    const route = useRoute();
+
+    const routes = router.options.routes;
+
+    const handleKeydown = (event) => {
+      const currentIndex = routes.findIndex((r) => r.path === route.path);
+      if (['ArrowRight', 'l'].includes(event.key)) {
+        // Navigate to the next route
+        const nextIndex = (currentIndex + 1) % routes.length; // Loop back to the first route
+        router.push(routes[nextIndex].path);
+      } else if (['ArrowLeft', 'h'].includes(event.key)) {
+        // Navigate to the previous route
+        const prevIndex = (currentIndex - 1 + routes.length) % routes.length; // Loop back to the last route
+        router.push(routes[prevIndex].path);
+      }
+    };
+
+    onMounted(() => {
+      window.addEventListener('keydown', handleKeydown);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener('keydown', handleKeydown);
+    });
+
+    return { routes };
+  },
+};
 </script>
 
 <style scoped>
@@ -45,7 +87,7 @@ export default {
   padding: 4rem;
   padding-bottom: 10px;
   padding-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-color: #151d2468;
   backdrop-filter: blur(300px);
   border: 3px solid #6785bf55;
@@ -55,6 +97,15 @@ export default {
 
 Navbar {
   z-index: 2;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 8px;
+  font-size: .86em;
+  opacity: .82;
 }
 
 .fade-enter-active,

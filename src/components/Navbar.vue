@@ -1,28 +1,39 @@
 <template>
   <div id="navbar">
-    <router-link to="/portfolio/" title="Home" active-class="active">
+    <router-link to="/portfolio/" title="Home" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-home"></i>
       <span>Home</span>
     </router-link>
     <p class="dot">⬤</p>
-    <router-link to="/portfolio/about-me" title="About me" active-class="active">
+    <router-link to="/portfolio/about-me" title="About me" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-circle-info"></i>
       <span>About Me</span>
     </router-link>
-    <router-link to="/portfolio/gallery" title="Gallery" active-class="active">
+    <router-link to="/portfolio/gallery" title="Gallery" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-book"></i>
       <span>Gallery</span>
     </router-link>
-    <router-link to="/portfolio/contact" title="Contact" active-class="active">
+    <router-link to="/portfolio/contact" title="Contact" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-comment"></i>
       <span>Contact</span>
     </router-link>
-    <router-link to="/portfolio/command-line" title="Command line" active-class="active">
+    <router-link to="/portfolio/command-line" title="Command line" active-class="active"
+      @click.native="handleLinkClick">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>
       <span>Command Line</span>
     </router-link>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    handleLinkClick() {
+      this.$emit("link-clicked");
+    },
+  },
+};
+</script>
 
 <style scoped>
 #navbar {

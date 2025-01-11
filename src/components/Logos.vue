@@ -73,7 +73,7 @@ export default {
 .logo img {
   width: 100px;
   height: 100px;
-  transition: transform 0.3s;
+  transition: transform 1s;
   border: 3px solid #6785bf55;
   border-radius: 15px;
   padding: 10px;

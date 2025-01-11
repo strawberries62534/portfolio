@@ -6,7 +6,7 @@ import Contact from '../pages/Contact.vue';
 import CommandLine from '../pages/CommandLine.vue';
 
 const routes = [
-  { path: '/portfolio', component: Home },
+  { path: '/portfolio/', component: Home },
   { path: '/portfolio/about-me', component: AboutMe },
   { path: '/portfolio/gallery', component: Gallery },
   { path: '/portfolio/contact', component: Contact },
