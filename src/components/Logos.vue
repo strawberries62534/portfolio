@@ -23,11 +23,11 @@ export default {
     return {
       scrolling: true,
       technologies: [
-        { name: "C", url: "https://en.wikipedia.org/wiki/C_(programming_language)", logo: "/c.png" },
-        { name: "Git", url: "https://git-scm.com/", logo: "/git.png" },
-        { name: "Arch-Linux", url: "https://archlinux.org/", logo: "/arch.png" },
-        { name: "Vue.js", url: "https://vuejs.org/", logo: "/vue.png" },
-        { name: "Neovim", url: "https://neovim.io/", logo: "/neovim.png" },
+        { name: "C", url: "https://en.wikipedia.org/wiki/C_(programming_language)", logo: "./c.png" },
+        { name: "Git", url: "https://git-scm.com/", logo: "./git.png" },
+        { name: "Arch-Linux", url: "https://archlinux.org/", logo: "./arch.png" },
+        { name: "Vue.js", url: "https://vuejs.org/", logo: "./vue.png" },
+        { name: "Neovim", url: "https://neovim.io/", logo: "./neovim.png" },
       ],
     };
   },

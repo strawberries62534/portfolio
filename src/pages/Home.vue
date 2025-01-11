@@ -8,7 +8,7 @@
           Hi, I'm a 1st-year Computer Science student in the "BUT Informatique" program in Clermont-Ferrand
           (France).<br />
           I love coding, tinkering with my OS, and creating efficient solutions to problems.<br />
-          Besides tech I play piano andsometimes draw.<br />
+          Besides tech I try to learn piano and sometimes draw.<br />
           Welcome to my portfolio!
         </p>
 
