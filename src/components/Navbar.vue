@@ -2,19 +2,24 @@
   <div id="navbar">
     <router-link to="/" title="Home">
       <i class="fas fa-home"></i>
+      <span>Home</span>
     </router-link>
     <p class="dot">⬤</p>
     <router-link to="/about-me" title="About me">
       <i class="fas fa-circle-info"></i>
+      <span>About Me</span>
     </router-link>
     <router-link to="/gallery" title="Gallery">
       <i class="fas fa-book"></i>
+      <span>Gallery</span>
     </router-link>
     <router-link to="/contact" title="Contact">
       <i class="fas fa-comment"></i>
+      <span>Contact</span>
     </router-link>
     <router-link to="/command-line" title="Command line">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>
+      <span>Command Line</span>
     </router-link>
   </div>
 </template>
@@ -35,20 +40,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
 }
 
 #navbar a {
   text-decoration: none;
   margin: 0 28px;
+  display: flex;
+  align-items: center;
 }
 
 #navbar i {
   font-size: 30px;
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   opacity: 85%;
 }
 
-#navbar a:hover i {
+#navbar span {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+  opacity: 85%;
+}
+
+#navbar a:hover i,
+#navbar a:hover span {
   color: #8776d6;
 }
 
@@ -59,5 +76,21 @@
   opacity: 70%;
   font-size: 12px;
   user-select: none;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar a {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #navbar span {
+    display: none;
+  }
+
+  #navbar a {
+    margin: 0 4.5%;
+  }
 }
 </style>

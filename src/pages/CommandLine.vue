@@ -3,7 +3,7 @@
     <h1><span>Command line</span></h1>
 
     <section id="terminal">
-      <div class="terminal">
+      <div class="terminal" @click="focusInput">
         <!-- Display command prompt and output -->
         <div class="output">
           <div v-for="(line, index) in output" :key="index" class="output-line" v-html="line"></div>
@@ -13,7 +13,8 @@
           <span class="username">user@machine</span>
           <span class="path">{{ currentPath }}</span>
           <span class="prompt">></span>
-          <input v-model="currentCommand" @keyup.enter="executeCommand" type="text" class="command-input" autofocus />
+          <input ref="commandInput" v-model="currentCommand" @keyup.enter="executeCommand" type="text"
+            class="command-input" autofocus />
         </div>
       </div>
     </section>
@@ -76,12 +77,20 @@ export default {
       // Clear the command input
       this.currentCommand = '';
     },
+    focusInput() {
+      // Focus the input field
+      this.$refs.commandInput.focus();
+    },
   },
 };
 </script>
 
 <!-- had to remove scoped here TwT -->
 <style>
+#terminal {
+  margin-bottom: 30px;
+}
+
 .terminal {
   width: 100%;
   height: 50vh;
@@ -102,7 +111,8 @@ export default {
 
 .terminal-prompt {
   color: #a0a0a0;
-  display: flex;
+  display: inline-flex;
+  white-space: nowrap;
   align-items: center;
   gap: 8px;
 }
@@ -121,7 +131,6 @@ export default {
 }
 
 .output-line {
-  display: inline-block;
   display: block;
   color: #b0b0b0;
   word-wrap: break-word;
