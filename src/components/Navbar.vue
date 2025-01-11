@@ -20,7 +20,7 @@
 #navbar {
   z-index: 10;
   background-color: #151d2468;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(300px);
   position: fixed;
   top: 20px;
   left: 50%;
