@@ -18,6 +18,8 @@
           inventore laboriosam?
         </p>
 
+        <router-link to="/portfolio/gallery" class="button">Go to gallery</router-link>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a eligendi rerum facere, eaque itaque,
           voluptates quia quisquam corrupti dignissimos placeat ea similique. Dolore, quia delectus. Culpa aspernatur
@@ -58,6 +60,10 @@ export default {
   width: 800px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.button {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
