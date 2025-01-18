@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Linux theme switcher",
-      "description": "A small bash script that allows you to quickly and seemlessly switch between multiple dotfiles configurations.",
+      "description": "A small Bash script that allows you to quickly and seemlessly switch between multiple dotfiles configurations.",
       "importance": "45",
       "preview": "./themeswitcher.png",
       "file": "https://github.com/eiiko6/theme-switcher"
@@ -55,6 +55,14 @@
       "importance": "60",
       "preview": "./archinstall.png",
       "file": "https://github.com/eiiko6/arch-installer"
+    },
+    {
+      "id": 8,
+      "name": "Hyprland bindings checker",
+      "description": "A Bash script that allows you to monitor your Hyprland key bindings.",
+      "importance": "41",
+      "preview": "./bindings.png",
+      "file": "https://github.com/eiiko6/hyprland-bindings-checker"
     }
   ]
 }
