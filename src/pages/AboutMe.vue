@@ -1,26 +1,53 @@
 <template>
-  <div>
+  <div id="aboutmecontent">
     <section id="Introduction">
       <h1><span>About Me</span></h1>
 
-      <h2>My strengths</h2>
-
       <div id="gauges">
         <SkillGauge skillName="Linux" :percentage="85" color="#268BD2" />
-        <SkillGauge skillName="C language" :percentage="60" color="#8776D6" />
-        <SkillGauge skillName="Web languages" :percentage="48" color="#9FB6D9" />
+        <SkillGauge skillName="C/C++/C#" :percentage="55" color="#8776D6" />
+        <SkillGauge skillName="Web languages" :percentage="38" color="#9FB6D9" />
       </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos omnis laborum earum officiis
-        voluptatibus similique magni, inventore, ducimus dolore eum, excepturi non accusamus. Reprehenderit eius
-        sapiente
-        quisquam recusandae nulla.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="bubble">
+            <h3>2023 - Present</h3>
+            <p>
+              <strong>BUT Informatique</strong><br />
+              1st-year student exploring the world of computer science and software development.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="bubble">
+            <h3>2021 - 2023</h3>
+            <p>
+              <strong>High School Diploma</strong><br />
+              Graduated with a specialization in science and mathematics, fostering analytical skills.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="bubble">
+            <h3>2021</h3>
+            <p>
+              <strong>Internship - Tech Support and Servers</strong><br />
+              Learned about collaboration in a professional environment.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="bubble">
+            <h3>2019 - 2021</h3>
+            <p>
+              <strong>Self-Taught Programming</strong><br />
+              Began exploring programming with small projects, setting the foundation for future learning.
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <h2>My professional experiences</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos omnis laborum earum officiis
-        voluptatibus similique magni, inventore, ducimus dolore eum, excepturi non accusamus. Reprehenderit eius
-        sapiente
-        quisquam recusandae nulla.</p>
     </section>
   </div>
 </template>
@@ -36,7 +63,109 @@ export default {
 </script>
 
 <style scoped>
+* {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #gauges {
+  flex-direction: row;
+  gap: 1.5rem;
   margin-bottom: 28px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.timeline {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  margin: 2rem auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  overflow: visible;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: rgba(103, 133, 191, 0.3);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.timeline-item:first-child::before {
+  top: 50%;
+  /* Start line halfway up for the first bubble */
+}
+
+.timeline-item:last-child::before {
+  height: 50%;
+  /* End line halfway down for the last bubble */
+}
+
+.bubble {
+  position: relative;
+  background-color: rgba(21, 29, 36, 0.8);
+  border: 2px solid rgba(103, 133, 191, 0.6);
+  border-radius: 25px;
+  padding: 1.5rem;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bubble:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(103, 133, 191, 0.5);
+}
+
+.bubble h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #6785bf;
+}
+
+.bubble p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: rgba(103, 133, 191, 0.5);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  #gauges {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 </style>

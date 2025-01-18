@@ -6,6 +6,12 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
+  background-color: #43518E44;
+  background-image: url('/bubbles.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +38,8 @@ span {
   color: #8776d6;
 }
 
-button, .button {
+button,
+.button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -55,12 +62,15 @@ button, .button {
   color: #ffffff;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   border-color: #6785bfff;
 }
 
-button:focus, .button:focus,
-button:focus-visible, .button:focus-visible {
+button:focus,
+.button:focus,
+button:focus-visible,
+.button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 

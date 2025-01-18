@@ -1,14 +1,51 @@
 <template>
   <div>
-    <section id="Introduction">
-      <h1><span>Contact</span></h1>
-      <h2>How can I learn more?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos omnis laborum earum officiis
-        voluptatibus similique magni, inventore, ducimus dolore eum, excepturi non accusamus. Reprehenderit eius
-        sapiente
-        quisquam recusandae nulla.</p>
+    <h1><span>Contact</span></h1>
+    <section id="Links">
+      <ul>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon-link">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </ul>
+    </section>
+
+    <section id="Resume">
+      <p>
+        Download my resume here: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is a
+          placeholder rickroll</a>
+      </p>
     </section>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  display: inline;
+  margin: 0;
+}
+
+#Links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#Links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-link {
+  font-size: 40px;
+  color: #ffffffaa;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  align-items: center;
+  transition: color 0.15s ease;
+}
+</style>

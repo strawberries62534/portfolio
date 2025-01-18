@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <Navbar @link-clicked="showNotification"></Navbar>
+    <Navbar class="navbar" @link-clicked="showNotification"></Navbar>
 
     <div id="content">
       <router-view v-slot="{ Component }">
@@ -39,11 +39,11 @@ export default {
 
     const handleKeydown = (event) => {
       const currentIndex = routes.findIndex((r) => r.path === route.path);
-      if (['ArrowRight', 'l'].includes(event.key)) {
+      if (['ArrowRight'].includes(event.key)) {
         // Navigate to the next route
         const nextIndex = (currentIndex + 1) % routes.length; // Loop back to the first route
         router.push(routes[nextIndex].path);
-      } else if (['ArrowLeft', 'h'].includes(event.key)) {
+      } else if (['ArrowLeft'].includes(event.key)) {
         // Navigate to the previous route
         const prevIndex = (currentIndex - 1 + routes.length) % routes.length; // Loop back to the last route
         router.push(routes[prevIndex].path);
@@ -74,7 +74,7 @@ export default {
   min-width: 100vw;
   /* Ensure the page spans full viewport height */
   text-align: center;
-  background-image: url('/bubbles.png');
+  /* background-image: url('/bubbles.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,6 +84,7 @@ export default {
 #content {
   margin-top: 140px;
   max-width: 70%;
+  min-width: 70%;
   padding: 4rem;
   padding-bottom: 10px;
   padding-top: 15px;
@@ -95,7 +96,7 @@ export default {
   z-index: 1;
 }
 
-Navbar {
+.navbar {
   z-index: 2;
 }
 
@@ -116,5 +117,11 @@ Navbar {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media print {
+  .navbar {
+    display: none !important;
+  }
 }
 </style>
