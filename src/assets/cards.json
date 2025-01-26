@@ -3,7 +3,10 @@
     {
       "id": 1,
       "name": "Linux Dotfiles",
-      "description": "My dynamically-themed Linux dotfiles and config script for my every-day workflow using Hyprland. Meant to be easily installed on any base Arch installation.",
+      "description": {
+        "en": "My dynamically-themed Linux dotfiles and config script for my every-day workflow using Hyprland. Meant to be easily installed on any base Arch installation.",
+        "fr": "Mes dotfiles Linux à thème dynamique et script de configuration pour mon flux de travail quotidien utilisant Hyprland. Conçu pour être facilement installé sur toute installation Arch de base."
+      },
       "importance": "100",
       "preview": "./dotfiles.png",
       "file": "https://github.com/eiiko6/dotfiles"
@@ -11,7 +14,10 @@
     {
       "id": 2,
       "name": "Spotify Data",
-      "description": "A front-end app wrote in typescript that fetches data from your Spotify account.",
+      "description": {
+        "en": "A front-end app written in TypeScript that fetches data from your Spotify account.",
+        "fr": "Une application front-end écrite en TypeScript qui récupère les données de votre compte Spotify."
+      },
       "importance": "50",
       "preview": "./spotistats.png",
       "file": "https://github.com/eiiko6/theme-switcher"
@@ -19,7 +25,10 @@
     {
       "id": 3,
       "name": "RPG battle player",
-      "description": "A python app that animates battles with init settings. It was made for a big RPG game in school.",
+      "description": {
+        "en": "A Python app that animates battles with init settings. It was made for a big RPG game in school.",
+        "fr": "Une application Python qui anime des batailles avec des paramètres initiaux. Elle a été créée pour un grand jeu RPG à l'école."
+      },
       "importance": "40",
       "preview": "./rpg.png",
       "file": "https://github.com/eiiko6/DOPJB-2024"
@@ -27,7 +36,10 @@
     {
       "id": 4,
       "name": "ShinyBot",
-      "description": "An old-deprecated multifunctional discord bot wrote in javascript during pandemic. It was my first programming project.",
+      "description": {
+        "en": "An old-deprecated multifunctional Discord bot written in JavaScript during the pandemic. It was my first programming project.",
+        "fr": "Un ancien bot multifonction Discord obsolète écrit en JavaScript pendant la pandémie. C'était mon premier projet de programmation."
+      },
       "importance": "30",
       "preview": "./shinybot.png",
       "file": "https://github.com/eiiko6/ShinyBot"
@@ -35,7 +47,10 @@
     {
       "id": 5,
       "name": "Flappigeon",
-      "description": "A small mobile game made with Unity. It was a collab with an artist friend.",
+      "description": {
+        "en": "A small mobile game made with Unity. It was a collaboration with an artist friend.",
+        "fr": "Un petit jeu mobile créé avec Unity. C'était une collaboration avec un ami artiste."
+      },
       "importance": "20",
       "preview": "./flappigeon.png",
       "file": ""
@@ -43,15 +58,21 @@
     {
       "id": 6,
       "name": "Linux theme switcher",
-      "description": "A small Bash script that allows you to quickly and seemlessly switch between multiple dotfiles configurations.",
-      "importance": "45",
+      "description": {
+        "en": "A small Bash script that allows you to quickly and seamlessly switch between multiple dotfiles configurations.",
+        "fr": "Un petit script Bash qui vous permet de changer rapidement et de manière transparente entre plusieurs configurations de dotfiles."
+      },
+      "importance": "51",
       "preview": "./themeswitcher.png",
       "file": "https://github.com/eiiko6/theme-switcher"
     },
     {
       "id": 7,
       "name": "Arch Linux installation script",
-      "description": "A shell script that does a minimal Arch installation for you, on any drive specified.",
+      "description": {
+        "en": "A shell script that does a minimal Arch installation for you, on any drive specified.",
+        "fr": "Un script shell qui effectue une installation minimale d'Arch pour vous, sur n'importe quel disque spécifié."
+      },
       "importance": "60",
       "preview": "./archinstall.png",
       "file": "https://github.com/eiiko6/arch-installer"
@@ -59,7 +80,10 @@
     {
       "id": 8,
       "name": "Hyprland bindings checker",
-      "description": "A Bash script that allows you to monitor your Hyprland key bindings.",
+      "description": {
+        "en": "A Bash script that allows you to monitor your Hyprland key bindings.",
+        "fr": "Un script Bash qui vous permet de surveiller vos raccourcis clavier Hyprland."
+      },
       "importance": "41",
       "preview": "./bindings.png",
       "file": "https://github.com/eiiko6/hyprland-bindings-checker"

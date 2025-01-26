@@ -2,31 +2,57 @@
   <div id="navbar">
     <router-link to="/portfolio/" title="Home" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-home"></i>
-      <span>Home</span>
+      <span>{{ $t('navbar.home') }}</span>
     </router-link>
-    <p class="dot">⬤</p>
     <router-link to="/portfolio/about-me" title="About me" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-circle-info"></i>
-      <span>About Me</span>
+      <span>{{ $t('navbar.about-me') }}</span>
     </router-link>
     <router-link to="/portfolio/gallery" title="Gallery" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-book"></i>
-      <span>Gallery</span>
+      <span>{{ $t('navbar.gallery') }}</span>
     </router-link>
     <router-link to="/portfolio/contact" title="Contact" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-comment"></i>
-      <span>Contact</span>
+      <span>{{ $t('navbar.contact') }}</span>
     </router-link>
     <router-link to="/portfolio/command-line" title="Command line" active-class="active"
       @click.native="handleLinkClick">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>
-      <span>Command Line</span>
+      <span>{{ $t('navbar.command-line') }}</span>
     </router-link>
+
+    <p class="dot">⬤</p>
+
+    <button @click="toggleLanguage" title="Switch Language">
+      <i class="fas fa-globe"></i>
+      <span>{{ currentLanguage }}</span>
+    </button>
   </div>
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
+
 export default {
+  setup() {
+    const { locale } = useI18n();
+
+    const switchLanguage = (lang) => {
+      locale.value = lang; // Dynamically updates the language
+    };
+
+    const toggleLanguage = () => {
+      const newLang = locale.value === 'en' ? 'fr' : 'en';
+      switchLanguage(newLang);
+    };
+
+    // Use computed to dynamically return the current language in uppercase
+    const currentLanguage = computed(() => locale.value.toUpperCase());
+
+    return { toggleLanguage, currentLanguage };
+  },
   methods: {
     handleLinkClick() {
       this.$emit("link-clicked");
@@ -57,7 +83,7 @@ export default {
 
 #navbar a {
   text-decoration: none;
-  margin: 0 28px;
+  margin: 0 1%;
   display: flex;
   align-items: center;
 }
@@ -77,7 +103,10 @@ export default {
 }
 
 #navbar a:hover i,
-#navbar a:hover span {
+#navbar a:hover span,
+#navbar button:hover i,
+#navbar button:hover span {
+  transition: 0.12s ease;
   color: #8776d6;
 }
 
@@ -98,13 +127,25 @@ export default {
   user-select: none;
 }
 
-@media screen and (max-width: 900px) {
-  #navbar a {
-    margin: 0 10px;
-  }
+#navbar button {
+  background: none;
+  backdrop-filter: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 710px) {
+#navbar button i {
+  margin-right: 8px;
+  font-size: 24px;
+  opacity: 85%;
+}
+
+@media screen and (max-width: 780px) {
   #navbar span {
     display: none;
   }

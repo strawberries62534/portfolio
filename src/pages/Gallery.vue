@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1 class="title"><span>Gallery</span></h1>
+    <h1 class="title"><span>{{ $t('gallery.title') }}</span></h1>
 
-    <button @click="sort">Sort by: {{ sortBy }}</button>
+    <button @click="sort">{{ $t('gallery.sort-button') }}: {{ $t('gallery.sort-modes.' + sortBy) }}</button>
 
     <div class="cards">
-      <Card v-for="card in sortedCards" :key="card.id" :name="card.name" :description="card.description"
+      <Card v-for="card in sortedCards" :key="card.id" :name="card.name" :description="card.description[locale]"
         :preview="card.preview" :file="card.file" />
       <div class="footer"></div>
     </div>
@@ -13,33 +13,47 @@
 </template>
 
 <script>
-import Card from '../components/Card.vue'
-import cards from '../assets/cards.json'
+import Card from '../components/Card.vue';
+import cards from '../assets/cards.json';
+import { useI18n } from 'vue-i18n';
 
 export default {
   components: {
-    Card
+    Card,
+  },
+  setup() {
+    const { locale } = useI18n();
+    return { locale };
   },
   data() {
-    // Sort cards by importance in descending order initially
-    const sortedCards = cards.cards.sort((a, b) => b.importance - a.importance);
     return {
-      sortedCards: sortedCards,
+      sortedCards: [],
       sortBy: "importance",
     };
   },
   methods: {
+    loadCards() {
+      // Sort by importance (default)
+      this.sortedCards = [...cards.cards].sort((a, b) => b.importance - a.importance);
+    },
     sort() {
       if (this.sortBy === "name") {
-        // Sort by importance in descending order (higher importance comes first)
-        this.sortedCards = [...cards.cards].sort((a, b) => b.importance - a.importance);
-        this.sortBy = "importance"; // Change sort type to name
+        this.sortedCards.sort((a, b) => b.importance - a.importance); // Sort by importance
+        this.sortBy = "importance";
       } else if (this.sortBy === "importance") {
-        // Sort by name in ascending order
-        this.sortedCards = [...cards.cards].sort((a, b) => a.name.localeCompare(b.name));
-        this.sortBy = "name"; // Change sort type back to importance
+        this.sortedCards.sort((a, b) => a.name.localeCompare(b.name)); // Sort by name
+        this.sortBy = "name";
       }
     },
+  },
+  watch: {
+    // Reload cards whenever the language changes
+    locale() {
+      this.loadCards();
+    },
+  },
+  created() {
+    this.loadCards(); // Load cards on component creation
   },
 };
 </script>

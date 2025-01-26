@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><span>Contact</span></h1>
+    <h1><span>{{ $t('contact.title') }}</span></h1>
     <section id="Links">
       <ul>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon-link">
@@ -15,7 +15,7 @@
 
     <section id="Resume">
       <p>
-        Download my resume here: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is a
+        {{ $t('contact.resume') }} <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is a
           placeholder rickroll</a>
       </p>
     </section>

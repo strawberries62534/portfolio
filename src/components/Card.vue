@@ -4,7 +4,7 @@
 
     <div class="card-content">
       <div class="popup">
-        <h2>Click to see</h2>
+        <h2>{{ $t('card.click-message') }}</h2>
       </div>
 
       <div class="true-content">

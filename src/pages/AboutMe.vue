@@ -1,7 +1,7 @@
 <template>
   <div id="aboutmecontent">
     <section id="Introduction">
-      <h1><span>About Me</span></h1>
+      <h1><span>{{ $t('about-me.title') }}</span></h1>
 
       <div id="gauges">
         <SkillGauge skillName="Linux" :percentage="85" color="#268BD2" />
@@ -12,37 +12,37 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="bubble">
-            <h3>2023 - Present</h3>
+            <h3>{{ $t('about-me.timeline.1.date') }}</h3>
             <p>
-              <strong>BUT Informatique</strong><br />
-              1st-year student exploring the world of computer science and software development.
+              <strong>{{ $t('about-me.timeline.1.title') }}</strong><br />
+              {{ $t('about-me.timeline.1.content') }}
             </p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="bubble">
-            <h3>2021 - 2023</h3>
+            <h3>{{ $t('about-me.timeline.2.date') }}</h3>
             <p>
-              <strong>High School Diploma</strong><br />
-              Graduated with a specialization in science and mathematics, fostering analytical skills.
+              <strong>{{ $t('about-me.timeline.2.title') }}</strong><br />
+              {{ $t('about-me.timeline.2.content') }}
             </p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="bubble">
-            <h3>2021</h3>
+            <h3>{{ $t('about-me.timeline.3.date') }}</h3>
             <p>
-              <strong>Internship - Tech Support and Servers</strong><br />
-              Learned about collaboration in a professional environment.
+              <strong>{{ $t('about-me.timeline.3.title') }}</strong><br />
+              {{ $t('about-me.timeline.3.content') }}
             </p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="bubble">
-            <h3>2019 - 2021</h3>
+            <h3>{{ $t('about-me.timeline.4.date') }}</h3>
             <p>
-              <strong>Self-Taught Programming</strong><br />
-              Began exploring programming with small projects, setting the foundation for future learning.
+              <strong>{{ $t('about-me.timeline.4.title') }}</strong><br />
+              {{ $t('about-me.timeline.4.content') }}
             </p>
           </div>
         </div>

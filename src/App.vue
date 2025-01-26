@@ -10,9 +10,9 @@
       </router-view>
     </div>
 
-    <NotificationPopup ref="notification" content="Tip: you can navigate pages with arrow keys!" />
+    <NotificationPopup ref="notification" :content="notificationTip" />
 
-    <p id="footer">Made with ❤️ using Vue.js.</p>
+    <p id="footer">{{ $t('app.footer') }}</p>
   </div>
 </template>
 
@@ -59,6 +59,11 @@ export default {
     });
 
     return { routes };
+  },
+  computed: {
+    notificationTip() {
+      return this.$t('app.tip-notification');
+    },
   },
 };
 </script>

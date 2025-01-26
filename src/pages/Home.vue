@@ -1,30 +1,12 @@
 <template>
   <div>
-    <h1><span>Welcome to My Portfolio</span></h1>
+    <h1><span>{{ $t('home.title') }}</span></h1>
     <Logos class="logo-scroller"></Logos>
     <div class="content">
       <div id="intro">
-        <p>
-          Hi, I'm a 1st-year Computer Science student in the "BUT Informatique" program in Clermont-Ferrand
-          (France).<br />
-          I love coding, tinkering with my OS, and creating efficient solutions to problems.<br />
-          Besides tech I try to learn piano and sometimes draw.<br />
-          Welcome to my portfolio!
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a eligendi rerum facere, eaque itaque,
-          voluptates quia quisquam corrupti dignissimos placeat ea similique. Dolore, quia delectus. Culpa aspernatur
-          inventore laboriosam?
-        </p>
+        <p v-html="$t('home.intro')" />
 
         <router-link to="/portfolio/gallery" class="button">Go to gallery</router-link>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a eligendi rerum facere, eaque itaque,
-          voluptates quia quisquam corrupti dignissimos placeat ea similique. Dolore, quia delectus. Culpa aspernatur
-          inventore laboriosam?
-        </p>
       </div>
     </div>
   </div>

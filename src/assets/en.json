@@ -1,0 +1,60 @@
+{
+  "app": {
+    "footer": "Made with ❤️ using Vue.js.",
+    "tip-notification": "Tip: you can navigate pages with arrow keys!"
+  },
+  "navbar": {
+    "home": "Home",
+    "about-me": "About me",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "command-line": "Command line"
+  },
+  "home": {
+    "title": "Welcome to my Portfolio",
+    "intro": "Hi, I'm a 1st-year Computer Science student in the \"BUT Informatique\" program in Clermont-Ferrand (France).<br />I love coding, tinkering with my OS, and creating efficient solutions to problems.<br />Besides tech I try to learn piano and sometimes draw.<br />Welcome to my portfolio!"
+  },
+  "about-me": {
+    "title": "About Me",
+    "timeline": {
+      "1": {
+        "date": "2023 - Present",
+        "title": "BUT Informatique",
+        "content": "1st-year student exploring the world of computer science and software development."
+      },
+      "2": {
+        "date": "2021 - 2023",
+        "title": "High School Diploma",
+        "content": "Graduated with a specialization in computers (SIN)."
+      },
+      "3": {
+        "date": "2021",
+        "title": "Internship - Tech Support and Servers",
+        "content": "Learned about collaboration in a professional environment."
+      },
+      "4": {
+        "date": "2019 - 2021",
+        "title": "Self-Taught Programming",
+        "content": "Began exploring programming with small projects, setting the foundation for future learning."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "sort-button": "Sorted by",
+    "sort-modes": {
+      "importance": "importance",
+      "name": "name"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "resume": "Download my resume here: "
+  },
+  "command-line": {
+    "title": "Command Line"
+  },
+  "card": {
+    "click-message": "Click to see"
+  }
+}

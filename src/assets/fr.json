@@ -1,0 +1,60 @@
+{
+  "app": {
+    "footer": "Fait avec ❤️ en utilisant Vue.js.",
+    "tip-notification": "Astuce : vous pouvez naviguer entre les pages avec les flèches du clavier !"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about-me": "À propos de moi",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "command-line": "Ligne de commande"
+  },
+  "home": {
+    "title": "Bienvenue sur mon Portfolio",
+    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique dans le programme \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bidouiller mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !"
+  },
+  "about-me": {
+    "title": "À propos de moi",
+    "timeline": {
+      "1": {
+        "date": "2023 - Présent",
+        "title": "BUT Informatique",
+        "content": "Étudiant de 1ère année explorant le monde de l'informatique et du développement logiciel."
+      },
+      "2": {
+        "date": "2021 - 2023",
+        "title": "Baccalauréat",
+        "content": "Diplômé avec une spécialisation en informatique (SIN)."
+      },
+      "3": {
+        "date": "2021",
+        "title": "Stage - Support Technique et Serveurs",
+        "content": "Découverte du travail en équipe dans un environnement professionnel."
+      },
+      "4": {
+        "date": "2019 - 2021",
+        "title": "Programmation Autodidacte",
+        "content": "Début de l'apprentissage de la programmation avec de petits projets, posant les bases pour l'avenir."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "sort-button": "Trié par",
+    "sort-modes": {
+      "importance": "importance",
+      "name": "nom"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "resume": "Téléchargez mon CV ici : "
+  },
+  "command-line": {
+    "title": "Ligne de commande"
+  },
+  "card": {
+    "click-message": "Cliquez pour voir"
+  }
+}

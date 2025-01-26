@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><span>Command line</span></h1>
+    <h1><span>{{ $t('command-line.title') }}</span></h1>
 
     <section id="terminal">
       <div class="terminal" @click="focusInput">
