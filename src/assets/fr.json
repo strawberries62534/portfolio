@@ -12,7 +12,8 @@
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
-    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique dans le programme \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bidouiller mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !"
+    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique dans le programme \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bidouiller mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
+    "gallery-button": "Aller à la gallerie"
   },
   "about-me": {
     "title": "À propos de moi",
@@ -52,7 +53,8 @@
     "resume": "Téléchargez mon CV ici : "
   },
   "command-line": {
-    "title": "Ligne de commande"
+    "title": "Ligne de commande",
+    "description": "Ici, vous pouvez naviguer dans le contenu de toutes les pages en utilisant des commandes Unix.<br/>Utilisez <strong>ls</strong> pour lister les fichiers disponibles, puis <strong>cat [nom_du_fichier]</strong> pour lire un fichier.<br/>Vous pouvez également voir toutes les commandes disponibles avec <strong>help</strong>."
   },
   "card": {
     "click-message": "Cliquez pour voir"

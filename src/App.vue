@@ -91,7 +91,7 @@ export default {
   max-width: 70%;
   min-width: 70%;
   padding: 4rem;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-top: 15px;
   margin-bottom: 100px;
   background-color: #151d2468;

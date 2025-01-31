@@ -6,7 +6,7 @@
       <div id="intro">
         <p v-html="$t('home.intro')" />
 
-        <router-link to="/portfolio/gallery" class="button">Go to gallery</router-link>
+        <router-link to="/portfolio/gallery" class="button">{{ $t('home.gallery-button') }}</router-link>
       </div>
     </div>
   </div>

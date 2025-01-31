@@ -19,64 +19,124 @@
       </div>
     </section>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea blanditiis ducimus exercitationem explicabo ab, quam
-      delectus aliquam est et culpa, dolores hic? Commodi eveniet minima praesentium facilis nesciunt velit ex.</p>
+    <p v-html="$t('command-line.description')" />
   </div>
 </template>
 
 <script>
+import terminalFiles from '../assets/terminal-files.json';
+import enWebsiteText from '../assets/en.json';
+import frWebsiteText from '../assets/fr.json';
+
 export default {
   data() {
     return {
       currentCommand: '',
       output: [],
       currentPath: ' ~/Documents',
+      files: [],
+      websiteText: {}, // Will store the current language's website text
     };
   },
+  created() {
+    // Set the website text based on the current i18n language
+    this.setWebsiteText(this.$i18n.locale);
+
+    // Combine terminal files and website text into a single array
+    this.files = [
+      ...terminalFiles,
+      ...this.convertWebsiteTextToFiles(this.websiteText),
+    ];
+  },
+  watch: {
+    // Watch for changes in the i18n locale and update the website text
+    '$i18n.locale'(newLocale) {
+      this.setWebsiteText(newLocale);
+      this.updateFiles();
+    },
+  },
   methods: {
+    setWebsiteText(locale) {
+      this.websiteText = locale === 'fr' ? frWebsiteText : enWebsiteText;
+    },
+    updateFiles() {
+      this.files = [
+        ...terminalFiles,
+        ...this.convertWebsiteTextToFiles(this.websiteText),
+      ];
+    },
+    convertWebsiteTextToFiles(websiteText) {
+      const files = [];
+      for (const page in websiteText) {
+        const pageContent = JSON.stringify(websiteText[page], null, 2); // Convert to pretty-printed JSON
+        files.push({
+          name: `${page}.json`, // Create a file for each page (e.g., home.json, about-me.json)
+          content: pageContent,
+        });
+      }
+      return files;
+    },
     executeCommand() {
       const command = this.currentCommand.trim();
 
       // Construct the full prompt with username, path, and command
       const fullPrompt = `
-        <span class="username">user@machine</span>
-        <span class="path">${this.currentPath}</span>
-        <span class="prompt">></span>
-        <span class="command">${command}</span>
-      `;
+    <span class="username">user@machine</span>
+    <span class="path">${this.currentPath}</span>
+    <span class="prompt">></span>
+    <span class="command">${command}</span>
+  `;
 
       this.output.push(fullPrompt);
 
       // Command output
       if (command === 'ls') {
-        this.output.push(
-          `<span class="output-line">file1.txt</span><span class="output-line">file2.md</span><span class="output-line">dir1</span>`
-        );
+        const fileList = this.files.map(file => `<span class="output-line">${file.name}</span>`).join('');
+        this.output.push(fileList);
       } else if (command === 'help') {
         this.output.push(
           `
-          <span class="output-line">Available commands:</span>
-          <span class="output-line">help</span>
-          <span class="output-line">clear</span>
-          <span class="output-line">ls</span>
-          `
+      <span class="output-line">Available commands:</span>
+      <span class="output-line">help</span>
+      <span class="output-line">clear</span>
+      <span class="output-line">ls</span>
+      <span class="output-line">cat [filename]</span>
+      `
         );
       } else if (command === 'clear') {
         // Clear the output when 'clear' is entered
         this.output = [];
+      } else if (command.startsWith('cat ')) {
+        const filename = command.split(' ')[1];
+        if (filename) {
+          const file = this.files.find(file => file.name === filename || file.name === `${filename}.txt` || file.name === `${filename}.json`);
+          if (file) {
+            const contentWithBreaks = file.content.replace(/\n/g, '<br>');
+            this.output.push(`<span class="output-line">${contentWithBreaks}</span>`);
+          } else {
+            this.output.push(`<span class="output-line">cat: ${filename}: No such file or directory</span>`);
+          }
+        } else {
+          this.output.push(`
+        <span class="output-line">Usage: cat [filename]</span>
+        <span class="output-line">Example: cat file1.txt</span>
+        <span class="output-line">Example: cat home.json</span>
+      `);
+        }
       } else {
         this.output.push(`<span class="output-line">zsh: command not found: ${command}</span>`);
       }
 
-      // Scroll to the latest output
+      // Scroll to the bottom
       this.$nextTick(() => {
-        const terminalOutput = this.$el.querySelector('.output');
+        const terminalOutput = this.$el.querySelector('.terminal');
         terminalOutput.scrollTop = terminalOutput.scrollHeight;
       });
 
       // Clear the command input
       this.currentCommand = '';
     },
+
     focusInput() {
       // Focus the input field
       this.$refs.commandInput.focus();
