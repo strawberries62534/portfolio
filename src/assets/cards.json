@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "name": "Linux theme switcher",
+      "name": "Linux config switcher",
       "description": {
         "en": "A small Bash script that allows you to quickly and seamlessly switch between multiple dotfiles configurations.",
         "fr": "Un petit script Bash qui vous permet de changer rapidement et de manière transparente entre plusieurs configurations de dotfiles."
@@ -87,6 +87,17 @@
       "importance": "41",
       "preview": "./bindings.png",
       "file": "https://github.com/eiiko6/hyprland-bindings-checker"
+    },
+    {
+      "id": 9,
+      "name": "Palette",
+      "description": {
+        "en": "A set of scripts to manage linux wallpapers and colorschemes with swww and wal.",
+        "fr": "Un ensemble de scripts pour gérer les fonds d'écran sous Linux et les palettes de couleurs avec swww et wal."
+      },
+      "importance": "48",
+      "preview": "./palette.png",
+      "file": "https://github.com/eiiko6/palette"
     }
   ]
 }
