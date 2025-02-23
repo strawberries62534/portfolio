@@ -73,20 +73,20 @@
         "en": "A shell script that does a minimal Arch installation for you, on any drive specified.",
         "fr": "Un script shell qui effectue une installation minimale d'Arch pour vous, sur n'importe quel disque spécifié."
       },
-      "importance": "60",
+      "importance": "41",
       "preview": "./archinstall.png",
       "file": "https://github.com/eiiko6/arch-installer"
     },
     {
       "id": 8,
-      "name": "Hyprland bindings checker",
+      "name": "hyprkeymap",
       "description": {
-        "en": "A Bash script that allows you to monitor your Hyprland key bindings.",
-        "fr": "Un script Bash qui vous permet de surveiller vos raccourcis clavier Hyprland."
+        "en": "A Hyprland key bindings manager written in C++",
+        "fr": "Un gestionnaire de raccourcis clavier pour Hyprland, écrit en C++"
       },
-      "importance": "41",
+      "importance": "60",
       "preview": "./bindings.png",
-      "file": "https://github.com/eiiko6/hyprland-bindings-checker"
+      "file": "https://github.com/eiiko6/hyprkeymap"
     },
     {
       "id": 9,
