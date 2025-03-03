@@ -20,14 +20,14 @@
       },
       "importance": "50",
       "preview": "./spotistats.png",
-      "file": "https://github.com/eiiko6/theme-switcher"
+      "file": "https://github.com/eiiko6/spotify-data"
     },
     {
       "id": 3,
       "name": "RPG battle player",
       "description": {
         "en": "A Python app that animates battles with init settings. It was made for a big RPG game in school.",
-        "fr": "Une application Python qui anime des batailles avec des paramètres initiaux. Elle a été créée pour un grand jeu RPG à l'école."
+        "fr": "Une application Python qui anime des batailles avec des paramètres initiaux. Elle a été créée pour un RPG grandeur nature organisé au lycée."
       },
       "importance": "40",
       "preview": "./rpg.png",

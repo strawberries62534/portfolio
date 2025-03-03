@@ -3,11 +3,11 @@
     <h1><span>{{ $t('contact.title') }}</span></h1>
     <section id="Links">
       <ul>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon-link">
+        <a href="#" class="icon-link">
           <i class="fab fa-github"></i>
         </a>
 
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="icon-link">
+        <a href="#" class="icon-link">
           <i class="fab fa-linkedin"></i>
         </a>
       </ul>
@@ -15,8 +15,7 @@
 
     <section id="Resume">
       <p>
-        {{ $t('contact.resume') }} <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is a
-          placeholder rickroll</a>
+        {{ $t('contact.resume') }} <a href="#">Not yet available</a>
       </p>
     </section>
   </div>
