@@ -98,6 +98,17 @@
       "importance": "48",
       "preview": "./palette.png",
       "file": "https://github.com/eiiko6/palette"
+    },
+    {
+      "id": 10,
+      "name": "Ryn",
+      "description": {
+        "en": "A minimalist shell written in Rust as a challenge for learning the language.",
+        "fr": "Un shell minimaliste écrit en Rust pour un défi pour apprendre le langage."
+      },
+      "importance": "47",
+      "preview": "./ryn.png",
+      "file": "https://github.com/eiiko6/Ryn"
     }
   ]
 }
