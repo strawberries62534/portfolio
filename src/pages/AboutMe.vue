@@ -12,22 +12,15 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="bubble">
-            <h3>{{ $t('about-me.timeline.1.date') }}</h3>
+            <h3>{{ $t('about-me.timeline.4.date') }}</h3>
             <p>
-              <strong>{{ $t('about-me.timeline.1.title') }}</strong><br />
-              {{ $t('about-me.timeline.1.content') }}
+              <strong>{{ $t('about-me.timeline.4.title') }}</strong><br />
+              {{ $t('about-me.timeline.4.content') }}
             </p>
           </div>
+          <p class="aside-paragraph">{{ $t('about-me.timeline.4.details') }}</p>
         </div>
-        <div class="timeline-item">
-          <div class="bubble">
-            <h3>{{ $t('about-me.timeline.2.date') }}</h3>
-            <p>
-              <strong>{{ $t('about-me.timeline.2.title') }}</strong><br />
-              {{ $t('about-me.timeline.2.content') }}
-            </p>
-          </div>
-        </div>
+
         <div class="timeline-item">
           <div class="bubble">
             <h3>{{ $t('about-me.timeline.3.date') }}</h3>
@@ -36,15 +29,29 @@
               {{ $t('about-me.timeline.3.content') }}
             </p>
           </div>
+          <p class="aside-paragraph">{{ $t('about-me.timeline.3.details') }}</p>
         </div>
+
         <div class="timeline-item">
           <div class="bubble">
-            <h3>{{ $t('about-me.timeline.4.date') }}</h3>
+            <h3>{{ $t('about-me.timeline.2.date') }}</h3>
             <p>
-              <strong>{{ $t('about-me.timeline.4.title') }}</strong><br />
-              {{ $t('about-me.timeline.4.content') }}
+              <strong>{{ $t('about-me.timeline.2.title') }}</strong><br />
+              {{ $t('about-me.timeline.2.content') }}
             </p>
           </div>
+          <p class="aside-paragraph">{{ $t('about-me.timeline.2.details') }}</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="bubble">
+            <h3>{{ $t('about-me.timeline.1.date') }}</h3>
+            <p>
+              <strong>{{ $t('about-me.timeline.1.title') }}</strong><br />
+              {{ $t('about-me.timeline.1.content') }}
+            </p>
+          </div>
+          <p class="aside-paragraph">{{ $t('about-me.timeline.1.details') }}</p>
         </div>
       </div>
 
@@ -74,39 +81,42 @@ export default {
 #gauges {
   flex-direction: row;
   gap: 1.5rem;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   width: 100%;
   overflow: hidden;
 }
 
 .timeline {
-  text-align: center;
-  padding: 2rem 0;
+  gap: 20px;
   position: relative;
-  margin: 2rem auto;
-  max-width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  position: relative;
 }
 
 .timeline-item {
   position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
   margin: 2rem 0;
   overflow: visible;
+  flex-wrap: wrap;
 }
 
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: rgba(103, 133, 191, 0.3);
-  transform: translateX(-50%);
-  z-index: -1;
+.aside-paragraph {
+  flex: 1;
+  margin: 0;
+  margin-right: 5%;
+  max-width: 40%;
+  /* font-size: 1.1rem; */
+  text-align: left;
+  color: #ffffffaa;
+  order: 2;
 }
 
 .timeline-item:first-child::before {
@@ -121,13 +131,14 @@ export default {
 
 .bubble {
   position: relative;
+  min-width: 200px;
+  max-width: 40%;
   background-color: rgba(21, 29, 36, 0.8);
   border: 2px solid rgba(103, 133, 191, 0.6);
   border-radius: 25px;
   padding: 1.5rem;
   width: 60%;
   margin: 0 auto;
-  text-align: left;
   backdrop-filter: blur(10px);
   color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -150,22 +161,38 @@ export default {
   line-height: 1.5;
 }
 
-.timeline::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 4px;
-  background: rgba(103, 133, 191, 0.5);
-  transform: translateX(-50%);
-  z-index: -1;
+@media (max-width: 1000px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aside-paragraph {
+    margin-right: 0;
+    max-width: 90%;
+    order: 1;
+    margin-right: 0;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .bubble {
+    max-width: 100%;
+    width: 85%;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   #gauges {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .aside-paragraph {
+    max-width: 100%;
+    width: 100%;
   }
 }
 </style>
