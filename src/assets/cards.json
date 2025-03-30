@@ -104,7 +104,7 @@
       "name": "Ryn",
       "description": {
         "en": "A minimalist shell written in Rust as a challenge for learning the language.",
-        "fr": "Un shell minimaliste écrit en Rust pour un défi pour apprendre le langage."
+        "fr": "Un shell minimaliste écrit en Rust pour un défi afin d'apprendre le langage."
       },
       "importance": "47",
       "preview": "./ryn.png",

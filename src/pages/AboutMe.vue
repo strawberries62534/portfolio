@@ -4,9 +4,9 @@
       <h1><span>{{ $t('about-me.title') }}</span></h1>
 
       <div id="gauges">
-        <SkillGauge skillName="Linux" :percentage="85" color="#268BD2" />
-        <SkillGauge skillName="C/C++/C#" :percentage="55" color="#8776D6" />
-        <SkillGauge skillName="Web languages" :percentage="38" color="#9FB6D9" />
+        <SkillGauge :skillName="$t('about-me.skills.systems')" :percentage="85" color="#268BD2" />
+        <SkillGauge :skillName="$t('about-me.skills.software')" :percentage="38" color="#8776D6" />
+        <SkillGauge :skillName="$t('about-me.skills.web')" :percentage="55" color="#9FB6D9" />
       </div>
 
       <div class="timeline">

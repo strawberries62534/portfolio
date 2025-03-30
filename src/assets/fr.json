@@ -12,19 +12,24 @@
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
-    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique dans le programme \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
+    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
     "gallery-button": "Aller à la gallerie"
   },
   "about-me": {
     "title": "À propos de moi",
+    "skills": {
+      "systems": "Linux & réseaux",
+      "software": "Développement logiciel",
+      "web": "Langages web"
+    },
     "timeline": {
       "1": {
-        "date": "2023 - Présent",
+        "date": "2024 - Présent",
         "title": "BUT Informatique",
         "content": "Étudiant de 1ère année explorant le monde de l'informatique et du développement logiciel."
       },
       "2": {
-        "date": "2021 - 2023",
+        "date": "2021 - 2024",
         "title": "Baccalauréat",
         "content": "Diplômé avec une spécialisation en informatique (SIN)."
       },

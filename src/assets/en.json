@@ -17,14 +17,19 @@
   },
   "about-me": {
     "title": "About Me",
+    "skills": {
+      "systems": "Linux & networks",
+      "software": "Software development",
+      "web": "Web languages"
+    },
     "timeline": {
       "1": {
-        "date": "2023 - Present",
+        "date": "2024 - Present",
         "title": "BUT Informatique",
         "content": "1st-year student exploring the world of computer science and software development."
       },
       "2": {
-        "date": "2021 - 2023",
+        "date": "2021 - 2024",
         "title": "High School Diploma",
         "content": "Graduated with a specialization in computers (SIN)."
       },
