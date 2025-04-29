@@ -1,12 +1,18 @@
 <template>
   <div>
-    <h1><span>{{ $t('home.title') }}</span></h1>
-    <Logos class="logo-scroller"></Logos>
+    <h1 class="title">
+      <span>{{ $t('home.title') }}</span>
+    </h1>
+
     <div class="content">
       <div id="intro">
         <p v-html="$t('home.intro')" />
 
-        <router-link to="/portfolio/gallery" class="button">{{ $t('home.gallery-button') }}</router-link>
+        <div class="cta-grid">
+          <router-link to="/portfolio/gallery" class="button">{{ $t('home.gallery-button') }}</router-link>
+          <router-link to="/portfolio/about-me" class="button">{{ $t('home.aboutme-button') }}</router-link>
+          <router-link to="/portfolio/contact" class="button">{{ $t('home.contact-button') }}</router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -28,14 +34,50 @@ export default {
   margin: 0 auto;
 }
 
-#intro h1 {
+h1 span {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #A678DE, #67BFD9, #A678DE, #68C4C6, #A678DE);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientOscillate 8s ease-in-out infinite alternate;
+}
+
+@keyframes gradientOscillate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
 }
 
 #intro p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  max-width: 70ch;
+  margin: 0 auto 2rem;
+  color: #ccccdd;
+  text-wrap: pretty;
+}
+
+.cta-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 4.5rem;
 }
 
 .logo-scroller {

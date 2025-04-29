@@ -9,7 +9,11 @@
       },
       "importance": "100",
       "preview": "./dotfiles.png",
-      "file": "https://github.com/eiiko6/dotfiles"
+      "file": "https://github.com/eiiko6/dotfiles",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation"
+      ]
     },
     {
       "id": 2,
@@ -20,7 +24,11 @@
       },
       "importance": "50",
       "preview": "./spotistats.png",
-      "file": "https://github.com/eiiko6/spotify-data"
+      "file": "https://github.com/eiiko6/spotify-data",
+      "categories": [
+        "Web & Frontend",
+        "APIs & Integration"
+      ]
     },
     {
       "id": 3,
@@ -31,7 +39,11 @@
       },
       "importance": "40",
       "preview": "./rpg.png",
-      "file": "https://github.com/eiiko6/DOPJB-2024"
+      "file": "https://github.com/eiiko6/DOPJB-2024",
+      "categories": [
+        "Game Development",
+        "Learning Projects"
+      ]
     },
     {
       "id": 4,
@@ -42,7 +54,11 @@
       },
       "importance": "30",
       "preview": "./shinybot.png",
-      "file": "https://github.com/eiiko6/ShinyBot"
+      "file": "https://github.com/eiiko6/ShinyBot",
+      "categories": [
+        "APIs & Integration",
+        "Learning Projects"
+      ]
     },
     {
       "id": 5,
@@ -53,7 +69,10 @@
       },
       "importance": "20",
       "preview": "./flappigeon.png",
-      "file": ""
+      "file": "",
+      "categories": [
+        "Game Development"
+      ]
     },
     {
       "id": 6,
@@ -64,7 +83,11 @@
       },
       "importance": "51",
       "preview": "./themeswitcher.png",
-      "file": "https://github.com/eiiko6/theme-switcher"
+      "file": "https://github.com/eiiko6/theme-switcher",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation"
+      ]
     },
     {
       "id": 7,
@@ -75,7 +98,12 @@
       },
       "importance": "41",
       "preview": "./archinstall.png",
-      "file": "https://github.com/eiiko6/arch-installer"
+      "file": "https://github.com/eiiko6/arch-installer",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation",
+        "System Tools"
+      ]
     },
     {
       "id": 8,
@@ -86,7 +114,12 @@
       },
       "importance": "60",
       "preview": "./bindings.png",
-      "file": "https://github.com/eiiko6/hyprkeymap"
+      "file": "https://github.com/eiiko6/hyprkeymap",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation",
+        "System Tools"
+      ]
     },
     {
       "id": 9,
@@ -97,7 +130,11 @@
       },
       "importance": "48",
       "preview": "./palette.png",
-      "file": "https://github.com/eiiko6/palette"
+      "file": "https://github.com/eiiko6/palette",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation"
+      ]
     },
     {
       "id": 10,
@@ -106,9 +143,13 @@
         "en": "A minimalist shell written in Rust as a challenge for learning the language.",
         "fr": "Un shell minimaliste écrit en Rust pour un défi afin d'apprendre le langage."
       },
-      "importance": "47",
+      "importance": "90",
       "preview": "./ryn.png",
-      "file": "https://github.com/eiiko6/Ryn"
+      "file": "https://github.com/eiiko6/Ryn",
+      "categories": [
+        "System Tools",
+        "Learning Projects"
+      ]
     }
   ]
 }

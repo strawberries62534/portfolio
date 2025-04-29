@@ -130,10 +130,11 @@ export default {
 }
 
 .bubble {
+  user-select: none;
   position: relative;
   min-width: 200px;
   max-width: 40%;
-  background-color: rgba(21, 29, 36, 0.8);
+  background-color: rgba(21, 29, 36, 0.5);
   border: 2px solid rgba(103, 133, 191, 0.6);
   border-radius: 25px;
   padding: 1.5rem;
@@ -141,13 +142,11 @@ export default {
   margin: 0 auto;
   backdrop-filter: blur(10px);
   color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bubble:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(103, 133, 191, 0.5);
 }
 
 .bubble h3 {

@@ -13,7 +13,9 @@
   "home": {
     "title": "Bienvenue sur mon Portfolio",
     "intro": "Bonjour, je suis étudiant en 1ère année en Informatique en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
-    "gallery-button": "Aller à la gallerie"
+    "gallery-button": "Aller à la gallerie",
+    "aboutme-button": "A propos de moi",
+    "contact-button": "Me contacter"
   },
   "about-me": {
     "title": "À propos de moi",
@@ -66,6 +68,15 @@
     "description": "Ici, vous pouvez naviguer dans le contenu de toutes les pages en utilisant des commandes Unix.<br/>Utilisez <strong>ls</strong> pour lister les fichiers disponibles, puis <strong>cat [nom_du_fichier]</strong> pour lire un fichier.<br/>Vous pouvez également voir toutes les commandes disponibles avec <strong>help</strong>."
   },
   "card": {
-    "click-message": "Cliquez pour voir"
+    "click-message": "Cliquez pour voir",
+    "categories": {
+      "Linux & Config": "Linux & Config",
+      "Scripting & Automation": "Scripting & Automation",
+      "Web & Frontend": "Web & Frontend",
+      "Game Development": "Développement de jeux",
+      "System Tools": "Outils système",
+      "APIs & Integration": "APIs & Integration",
+      "Learning Projects": "Projets d'apprentissage"
+    }
   }
 }

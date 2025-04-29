@@ -9,6 +9,11 @@
 
       <div class="true-content">
         <h2>{{ name }}</h2>
+
+        <p class="categories" v-if="categories && categories.length">
+          {{ categories.map(cat => $t('card.categories.' + cat)).join(', ') }}
+        </p>
+
         <p>{{ description }}</p>
       </div>
     </div>
@@ -17,7 +22,7 @@
 
 <script>
 export default {
-  props: ['name', 'description', 'date', 'preview', 'file']
+  props: ['name', 'description', 'date', 'preview', 'file', 'categories']
 }
 </script>
 
@@ -115,6 +120,12 @@ p {
   margin: 0;
   margin: 0 20px;
   text-align: center;
+}
+
+.categories {
+  font-size: 0.65em;
+  color: #ccccccaa;
+  margin: 6px 0 12px 0;
 }
 
 @media screen and (max-width: 730px) {

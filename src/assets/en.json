@@ -12,8 +12,11 @@
   },
   "home": {
     "title": "Welcome to my Portfolio",
+    "subtitle": "Systems hacker, toolmaker & web minimalist.",
     "intro": "Hi, I'm a 1st-year Computer Science student in the \"BUT Informatique\" program in Clermont-Ferrand (France).<br />I love coding, tinkering with my OS, and creating efficient solutions to problems.<br />Besides tech I try to learn piano and sometimes draw.<br />Welcome to my portfolio!",
-    "gallery-button": "Go to gallery"
+    "gallery-button": "Go to Gallery",
+    "aboutme-button": "See About Me",
+    "contact-button": "Contact me"
   },
   "about-me": {
     "title": "About Me",
@@ -66,6 +69,15 @@
     "description": "Here, you can navigate through the content of all the pages using Unix commands.<br/>Use <strong>ls</strong> to list available files, then <strong>cat [filename]</strong> to read a file.<br/>You can also see all the available commands with <strong>help</strong>."
   },
   "card": {
-    "click-message": "Click to see"
+    "click-message": "Click to see",
+    "categories": {
+      "Linux & Config": "Linux & Config",
+      "Scripting & Automation": "Scripting & Automation",
+      "Web & Frontend": "Web & Frontend",
+      "Game Development": "Game Development",
+      "System Tools": "System Tools",
+      "APIs & Integration": "APIs & Integration",
+      "Learning Projects": "Learning Projects"
+    }
   }
 }
