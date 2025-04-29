@@ -16,13 +16,17 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 };  // Always scroll to top on route change
+  }
 });
 
+// After route change, adjust transitions based on the depth of the route
 router.afterEach((to, from) => {
-  const toDepth = to.path.split('/').length
-  const fromDepth = from.path.split('/').length
-  to.meta.transition = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-})
+  const toDepth = to.path.split('/').length;
+  const fromDepth = from.path.split('/').length;
+  to.meta.transition = toDepth < fromDepth ? 'slide-right' : 'slide-left';
+});
 
 export default router;
 
