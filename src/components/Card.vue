@@ -1,10 +1,11 @@
 <template>
-  <a class="card" :href="file" target="_blank">
+  <a class="card" :href="isValidLink ? file : null" :class="{ disabled: !isValidLink }" @click.prevent="!isValidLink"
+    target="_blank">
     <div class="card-bg" :style="'background-image: url(' + preview + ');'"></div>
 
     <div class="card-content">
       <div class="popup">
-        <h2>{{ $t('card.click-message') }}</h2>
+        <h2>{{ isValidLink ? $t('card.click-message') : $t('card.not-available') }}</h2>
       </div>
 
       <div class="true-content">
@@ -22,7 +23,13 @@
 
 <script>
 export default {
-  props: ['name', 'description', 'date', 'preview', 'file', 'categories']
+  props: ['name', 'description', 'date', 'preview', 'file', 'categories'],
+
+  computed: {
+    isValidLink() {
+      return this.file && this.file !== '#';
+    }
+  }
 }
 </script>
 
@@ -61,6 +68,7 @@ export default {
   transition: .2s ease-out;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 .card-bg {

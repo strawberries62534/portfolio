@@ -27,7 +27,8 @@
       "file": "https://github.com/eiiko6/spotify-data",
       "categories": [
         "Web & Frontend",
-        "APIs & Integration"
+        "APIs & Integration",
+        "Data & Analysis"
       ]
     },
     {
@@ -41,8 +42,7 @@
       "preview": "./rpg.png",
       "file": "https://github.com/eiiko6/DOPJB-2024",
       "categories": [
-        "Game Development",
-        "Learning Projects"
+        "Game Development"
       ]
     },
     {
@@ -56,8 +56,7 @@
       "preview": "./shinybot.png",
       "file": "https://github.com/eiiko6/ShinyBot",
       "categories": [
-        "APIs & Integration",
-        "Learning Projects"
+        "APIs & Integration"
       ]
     },
     {
@@ -140,15 +139,73 @@
       "id": 10,
       "name": "Ryn",
       "description": {
-        "en": "A minimalist shell written in Rust as a challenge for learning the language.",
-        "fr": "Un shell minimaliste écrit en Rust pour un défi afin d'apprendre le langage."
+        "en": "A minimalist crossplatform shell written in Rust as a challenge for learning the language.",
+        "fr": "Un shell minimaliste crossplatforme écrit en Rust pour un défi afin d'apprendre le langage."
       },
       "importance": "90",
       "preview": "./ryn.png",
       "file": "https://github.com/eiiko6/Ryn",
       "categories": [
-        "System Tools",
-        "Learning Projects"
+        "System Tools"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Knights Wrath",
+      "description": {
+        "en": "An RPG-like rock paper scissors game. A group project aiming to use multiple sorting algorithms and data structures in C.",
+        "fr": "Un jeu RPG de type pierre-feuille-ciseaux. Le but était d'utiliser plusieurs algorithmes de tri et structures de données en C."
+      },
+      "importance": "10",
+      "preview": "./knight.png",
+      "file": "",
+      "categories": [
+        "School Projects"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Internships",
+      "description": {
+        "en": "A C program for managing students and their internship stages. This was to learn about memory management.",
+        "fr": "Un programme en C pour gérer les étudiants et leurs stages. Cela a servi à apprendre la gestion de la mémoire."
+      },
+      "importance": "10",
+      "preview": "./stages.png",
+      "file": "",
+      "categories": [
+        "School Projects",
+        "System Tools"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Pecking Pairs",
+      "description": {
+        "en": "A memory game built in a team using .NET MAUI.",
+        "fr": "Un jeu de mémoire créé en équipe avec .NET MAUI."
+      },
+      "importance": "10",
+      "preview": "",
+      "file": "",
+      "categories": [
+        "School Projects",
+        "Game Development"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Exploitation d'une base de données",
+      "description": {
+        "en": "A team project where we extracted data from datasets to a database, and performed data analysis in Python.",
+        "fr": "Un projet en équipe où nous avons extrait des données de jeux de données vers une base, et réalisé une analyse en Python."
+      },
+      "importance": "42",
+      "preview": "./data.png",
+      "file": "",
+      "categories": [
+        "School Projects",
+        "Data & Analysis"
       ]
     }
   ]

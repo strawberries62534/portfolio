@@ -3,8 +3,8 @@
     <h1><span>{{ $t('contact.title') }}</span></h1>
     <section id="Links">
       <ul>
-        <a href="#" class="icon-link">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/eiiko6" class="icon-link" target="_blank">
+          <i class="fab fa-github" target="_blank"></i>
         </a>
 
         <a href="#" class="icon-link">
@@ -15,7 +15,7 @@
 
     <section id="Resume">
       <p>
-        {{ $t('contact.resume') }} <a href="#">Not yet available</a>
+        {{ $t('contact.resume') }} <a href="./CV.pdf" target="_blank">(pdf)</a>
       </p>
     </section>
   </div>
@@ -45,6 +45,11 @@ a {
   padding: 10px 15px;
   border-radius: 8px;
   align-items: center;
-  transition: color 0.15s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+  color: #ffffff;
 }
 </style>
