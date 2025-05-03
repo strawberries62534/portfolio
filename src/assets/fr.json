@@ -6,14 +6,14 @@
   "navbar": {
     "home": "Accueil",
     "about-me": "À propos de moi",
-    "gallery": "Galerie",
+    "projects": "Projets",
     "contact": "Contact",
     "command-line": "Ligne de commande"
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
-    "intro": "Bonjour, je suis étudiant en 1ère année en Informatique en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
-    "gallery-button": "Aller à la gallerie",
+    "intro": "Bonjour, je suis étudiant de 1ère année en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
+    "projects-button": "Voir mes Projets",
     "aboutme-button": "A propos de moi",
     "contact-button": "Me contacter"
   },
@@ -56,8 +56,8 @@
       }
     }
   },
-  "gallery": {
-    "title": "Galerie",
+  "projects": {
+    "title": "Projets",
     "sort-button": "Trié par",
     "sort-modes": {
       "importance": "importance",

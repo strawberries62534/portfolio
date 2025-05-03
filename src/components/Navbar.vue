@@ -8,9 +8,9 @@
       <i class="fas fa-circle-info"></i>
       <span>{{ $t('navbar.about-me') }}</span>
     </router-link>
-    <router-link to="/portfolio/gallery" title="Gallery" active-class="active" @click.native="handleLinkClick">
+    <router-link to="/portfolio/projects" title="Projects" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-book"></i>
-      <span>{{ $t('navbar.gallery') }}</span>
+      <span>{{ $t('navbar.projects') }}</span>
     </router-link>
     <router-link to="/portfolio/contact" title="Contact" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-comment"></i>

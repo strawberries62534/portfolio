@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="title"><span>{{ $t('gallery.title') }}</span></h1>
+    <h1 class="title"><span>{{ $t('projects.title') }}</span></h1>
 
-    <button @click="sort">{{ $t('gallery.sort-button') }}: {{ $t('gallery.sort-modes.' + sortBy) }}</button>
+    <button @click="sort">{{ $t('projects.sort-button') }}: {{ $t('projects.sort-modes.' + sortBy) }}</button>
 
     <div class="category-filter">
       <label v-for="category in allCategories" :key="category" class="checkbox-label button">
