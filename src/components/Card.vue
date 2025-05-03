@@ -1,5 +1,5 @@
 <template>
-  <a class="card" :href="isValidLink ? file : null" :class="{ disabled: !isValidLink }" @click.prevent="!isValidLink"
+  <a class="card" :href="isValidLink ? file : null" :class="{ disabled: !isValidLink }" @click="handleClick"
     target="_blank">
     <div class="card-bg" :style="'background-image: url(' + preview + ');'"></div>
 
@@ -29,7 +29,16 @@ export default {
     isValidLink() {
       return this.file && this.file !== '#';
     }
+  },
+
+  methods: {
+    handleClick(event) {
+      if (!this.isValidLink) {
+        event.preventDefault();
+      }
+    }
   }
+
 }
 </script>
 
@@ -142,6 +151,26 @@ p {
     font-size: 20px;
     height: 350px;
     margin: 8px;
+  }
+
+  .card:hover {
+    transform: scale(1);
+    border-color: #6785bfff;
+  }
+
+  .card:hover .card-bg {
+    transform: scale(1);
+    filter: brightness(1) blur(0px);
+  }
+
+  .card:hover .true-content {
+    transition: 0s;
+    opacity: 1;
+  }
+
+  .card:hover .popup {
+    opacity: 0;
+    transform: translate(0%, 0%) scale(1);
   }
 }
 
