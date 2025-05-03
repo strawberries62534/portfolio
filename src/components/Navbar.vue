@@ -150,7 +150,11 @@ export default {
   user-select: none;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 760px) {
+  #navbar {
+    backdrop-filter: blur(15px);
+  }
+
   #navbar span {
     display: none;
   }
@@ -161,6 +165,10 @@ export default {
 }
 
 @media (max-width: 510px) {
+  #navbar {
+    height: 25px;
+  }
+
   #navbar a {
     margin: 0 3.5%;
   }
@@ -175,6 +183,10 @@ export default {
 }
 
 @media (max-width: 400px) {
+  #navbar {
+    height: 18px;
+  }
+
   #navbar i {
     font-size: 18px;
   }

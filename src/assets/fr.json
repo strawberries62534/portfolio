@@ -24,30 +24,35 @@
       "software": "Développement logiciel",
       "web": "Langages web"
     },
+    "read-more": "lire plus",
     "timeline": {
-      "1": {
+      "4": {
         "date": "2024 - Présent",
         "title": "BUT Informatique",
         "content": "Étudiant de 1ère année explorant le monde de l'informatique et du développement logiciel.",
-        "details": "Cette année, j’ai appris à développer et optimiser des applications, à gérer des systèmes informatiques complexes en réseau, à travailler avec l’information et les données, ainsi qu'à diriger un projet et collaborer au sein d’une équipe IT. Dans mon temps libre, je me suis aussi intéressé à des technologies passionnantes comme Rust et Nix."
+        "details": "Cette année, j’ai appris à développer et optimiser des applications, à gérer des systèmes informatiques complexes en réseau, à travailler avec l’information et les données, ainsi qu'à diriger un projet et collaborer au sein d’une équipe IT. Dans mon temps libre, je me suis aussi intéressé à des technologies passionnantes comme Rust et Nix.",
+        "popup": "Aucun détail supplémentaire."
       },
-      "2": {
+      "3": {
         "date": "2021 - 2024",
         "title": "Baccalauréat",
         "content": "Diplômé avec une spécialisation en informatique (SIN).",
-        "details": "Ces trois années de lycée m’ont permis de construire mon avenir en me faisant explorer à la fois l’informatique et les technologies du bâtiment, tout en apprenant les enjeux du développement durable."
+        "details": "Ces trois années de lycée m’ont permis de construire mon avenir en me faisant explorer à la fois l’informatique et les technologies du bâtiment, tout en apprenant les enjeux du développement durable.",
+        "popup": "Aucun détail supplémentaire."
       },
-      "3": {
+      "2": {
         "date": "2021",
         "title": "Stage - Support Technique et Serveurs",
         "content": "Découverte du travail en équipe dans un environnement professionnel.",
-        "details": "Ce stage a été une formidable opportunité pour moi de découvrir le milieu professionnel. J’ai pu mieux comprendre le fonctionnement d’une équipe de support technique au siège social d’une entreprise d'échelle nationale."
+        "details": "Ce stage a été une formidable opportunité pour moi de découvrir le milieu professionnel. J’ai pu mieux comprendre le fonctionnement d’une équipe de support technique au siège social d’une entreprise d'échelle nationale.",
+        "popup": "Aucun détail supplémentaire."
       },
-      "4": {
+      "1": {
         "date": "2019 - 2021",
         "title": "Programmation Autodidacte",
         "content": "Début de l'apprentissage de la programmation avec de petits projets, posant les bases pour l'avenir.",
-        "details": "J’ai découvert la programmation à travers les réseaux sociaux : mon premier projet a été un bot Discord, développé en JavaScript. J’ai ensuite poursuivi mon apprentissage avec le développement web. La pandémie a été pour moi l’occasion de découvrir cette passion."
+        "details": "J’ai découvert la programmation à travers les réseaux sociaux : mon premier projet a été un bot Discord, développé en JavaScript. J’ai ensuite poursuivi mon apprentissage avec le développement web. La pandémie a été pour moi l’occasion de découvrir cette passion.",
+        "popup": "Aucun détail supplémentaire."
       }
     }
   },

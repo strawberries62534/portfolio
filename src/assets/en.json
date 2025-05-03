@@ -25,31 +25,35 @@
       "software": "Software development",
       "web": "Web languages"
     },
+    "read-more": "read more",
     "timeline": {
       "4": {
         "date": "2024 - Present",
         "title": "BUT Informatique",
         "content": "1st-year student exploring the world of computer science and software development.",
         "details": "This year I have been learning to develop and optimize applications, manage complex networked IT systems, work with information and data, as well as to lead a project and collaborate within an IT team. In my free time, I have also been learning about exciting technologies like Rust and Nix.",
-        "popup": "Popup content"
+        "popup": "No additional details."
       },
       "3": {
         "date": "2021 - 2024",
         "title": "High School Diploma",
         "content": "Graduated with a specialization in computers (SIN).",
-        "details": "These 3 years of highschool have allowed me build my future by making me explore both IT and construction technologies, while learning about environmental sustainability."
+        "details": "These 3 years of highschool have allowed me build my future by making me explore both IT and construction technologies, while learning about environmental sustainability.",
+        "popup": "No additional details."
       },
       "2": {
         "date": "2021",
         "title": "Internship - Tech Support and Servers",
         "content": "Learned about collaboration in a professional environment.",
-        "details": "This internship was an amazing opportunity for me to discover the professional environment. I gained insight on how a technical support team works at the national head office of a country-scale company."
+        "details": "This internship was an amazing opportunity for me to discover the professional environment. I gained insight on how a technical support team works at the national head office of a country-scale company.",
+        "popup": "No additional details."
       },
       "1": {
         "date": "2019 - 2021",
         "title": "Self-Taught Programming",
         "content": "Began exploring programming with small projects, setting the foundation for future learning.",
-        "details": "I got into programming while using social media: I made a Discord bot as my first project, using Javascript. I then continued learning with web development. The pandemic was an opportunity for me to discover this passion."
+        "details": "I got into programming while using social media: I made a Discord bot as my first project, using Javascript. I then continued learning with web development. The pandemic was an opportunity for me to discover this passion.",
+        "popup": "No additional details."
       }
     }
   },

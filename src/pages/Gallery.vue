@@ -114,7 +114,7 @@ export default {
   margin-right: 6px;
 }
 
-@media (max-width: 400) {
+@media (max-width: 400px) {
   .cards {
     gap: 5px;
   }

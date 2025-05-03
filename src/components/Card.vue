@@ -128,6 +128,7 @@ p {
   margin: 0;
   margin: 0 20px;
   text-align: center;
+  font-size: 1em;
 }
 
 .categories {
@@ -138,8 +139,22 @@ p {
 
 @media screen and (max-width: 730px) {
   .card {
+    font-size: 20px;
     height: 350px;
     margin: 8px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .true-content {
+    backdrop-filter: brightness(0.85) blur(15px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    min-width: 95%;
+    width: 95%;
   }
 }
 </style>

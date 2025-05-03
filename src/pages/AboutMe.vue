@@ -15,13 +15,16 @@
           :popup="$t('about-me.timeline.4.popup')" />
 
         <TimelineItem :date="$t('about-me.timeline.3.date')" :title="$t('about-me.timeline.3.title')"
-          :content="$t('about-me.timeline.3.content')" :details="$t('about-me.timeline.3.details')" />
+          :content="$t('about-me.timeline.3.content')" :details="$t('about-me.timeline.3.details')"
+          :popup="$t('about-me.timeline.3.popup')" />
 
         <TimelineItem :date="$t('about-me.timeline.2.date')" :title="$t('about-me.timeline.2.title')"
-          :content="$t('about-me.timeline.2.content')" :details="$t('about-me.timeline.2.details')" />
+          :content="$t('about-me.timeline.2.content')" :details="$t('about-me.timeline.2.details')"
+          :popup="$t('about-me.timeline.2.popup')" />
 
         <TimelineItem :date="$t('about-me.timeline.1.date')" :title="$t('about-me.timeline.1.title')"
-          :content="$t('about-me.timeline.1.content')" :details="$t('about-me.timeline.1.details')" />
+          :content="$t('about-me.timeline.1.content')" :details="$t('about-me.timeline.1.details')"
+          :popup="$t('about-me.timeline.1.popup')" />
       </div>
     </section>
   </div>
@@ -83,6 +86,7 @@ export default {
 
 @media (max-width: 768px) {
   #gauges {
+    width: 92%;
     flex-direction: column;
     gap: 0.5rem;
   }

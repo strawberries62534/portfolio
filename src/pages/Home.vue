@@ -35,7 +35,6 @@ export default {
 }
 
 h1 span {
-  font-size: 4rem;
   font-weight: bold;
   background: linear-gradient(90deg, #A678DE, #67BFD9, #A678DE, #68C4C6, #A678DE);
   background-size: 300% 100%;
@@ -57,7 +56,6 @@ h1 span {
 }
 
 .title {
-  font-size: 2.5rem;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 6rem;
@@ -97,6 +95,27 @@ h1 span {
 
   .content {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #intro p {
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+  }
+
+  .cta-grid {
+    margin-top: 3rem;
+    gap: 10px;
+  }
+
+  .button {
+    margin-bottom: 10px;
   }
 }
 </style>

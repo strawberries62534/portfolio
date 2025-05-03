@@ -2,13 +2,16 @@
   <div class="timeline-item">
     <div class="bubble" @click="openPopup">
       <h3>{{ date }}</h3>
+
       <p>
         <strong>{{ title }}</strong><br />
         {{ content }}
       </p>
+
+      <span class="read-more">{{ $t('about-me.read-more') }} →</span>
     </div>
     <p class="aside-paragraph">{{ details }}</p>
-    <Popup v-if="showPopup" :title="title" :content="popup" @close="closePopup" />
+    <Popup v-if="showPopup" :title="title" :content="popupContent" @close="closePopup" />
   </div>
 </template>
 
@@ -29,10 +32,19 @@ export default {
   data() {
     return {
       showPopup: false,
+      popupContent: '',
     };
   },
   methods: {
     openPopup() {
+      if (window.innerWidth < 700) {
+        const hasPopup = this.popup !== "" && this.popup !== undefined;
+        const popupText = hasPopup ? `<br /><br />${this.popup}` : "";
+        this.popupContent = `${this.details}${popupText}`;
+
+      } else {
+        this.popupContent = this.popup == undefined ? "" : this.popup;
+      }
       this.showPopup = true;
     },
     closePopup() {
@@ -80,10 +92,11 @@ export default {
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  transform: scale(0.95);
 }
 
 .bubble:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .bubble h3 {
@@ -95,6 +108,15 @@ export default {
 .bubble p {
   margin: 0.5rem 0;
   line-height: 1.5;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  color: white;
 }
 
 @media (max-width: 1000px) {
@@ -128,13 +150,17 @@ export default {
   .bubble.clickable:hover {
     box-shadow: 0 0 10px #6785bf;
   }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+  .timeline-item {
+    margin: 0 0;
+  }
+
   .aside-paragraph {
-    max-width: 100%;
-    width: 100%;
+    display: none;
+    max-width: 95%;
+    width: 95%;
   }
 }
 </style>

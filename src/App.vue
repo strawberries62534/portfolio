@@ -12,7 +12,7 @@
 
     <NotificationPopup ref="notification" :content="notificationTip" />
 
-    <p id="footer">{{ $t('app.footer') }}</p>
+    <!-- <p id="footer">{{ $t('app.footer') }}</p> -->
   </div>
 </template>
 
@@ -92,7 +92,7 @@ export default {
   padding-top: 15px;
   margin-bottom: 100px;
   background-color: #151d2468;
-  backdrop-filter: blur(300px);
+  backdrop-filter: blur(100px);
   border: 3px solid #6785bf55;
   border-radius: 18px;
   z-index: 1;
@@ -121,13 +121,35 @@ export default {
   opacity: 0;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 700px) {
   #content {
+    border: 0px;
+    padding-top: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
     max-width: 90%;
+    background-color: #151d2468;
+    backdrop-filter: none;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: calc(100vh - 140px);
+  }
+
+  #page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: scroll;
+    transform: none;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
-@media (max-width: 400) {
+@media (max-width: 400px) {
   #content {
     max-width: 100%;
   }
