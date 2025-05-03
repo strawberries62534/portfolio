@@ -74,12 +74,9 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* Adjusted for Navbar */
   min-height: 100vh;
   min-width: 100vw;
-  /* Ensure the page spans full viewport height */
   text-align: center;
-  /* background-image: url('/bubbles.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -122,6 +119,18 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (max-width: 530px) {
+  #content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 400) {
+  #content {
+    max-width: 100%;
+  }
 }
 
 @media print {

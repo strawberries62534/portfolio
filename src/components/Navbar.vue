@@ -22,7 +22,7 @@
       <span>{{ $t('navbar.command-line') }}</span>
     </router-link>
 
-    <p class="dot">⬤</p>
+    <p class="dot">•</p>
 
     <button @click="toggleLanguage" title="Switch Language">
       <i class="fas fa-globe"></i>
@@ -145,6 +145,11 @@ export default {
   opacity: 85%;
 }
 
+.dot {
+  opacity: 70%;
+  user-select: none;
+}
+
 @media screen and (max-width: 780px) {
   #navbar span {
     display: none;
@@ -152,6 +157,30 @@ export default {
 
   #navbar a {
     margin: 0 4.5%;
+  }
+}
+
+@media (max-width: 510px) {
+  #navbar a {
+    margin: 0 3.5%;
+  }
+
+  #navbar i {
+    font-size: 22px;
+  }
+
+  #navbar button i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #navbar i {
+    font-size: 18px;
+  }
+
+  #navbar button i {
+    font-size: 17px;
   }
 }
 </style>

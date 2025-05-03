@@ -113,4 +113,10 @@ export default {
 .category-filter input[type="checkbox"] {
   margin-right: 6px;
 }
+
+@media (max-width: 400) {
+  .cards {
+    gap: 5px;
+  }
+}
 </style>
