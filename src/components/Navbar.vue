@@ -96,7 +96,7 @@ export default {
 
 #navbar span {
   margin-left: 8px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.87);
   opacity: 85%;
@@ -150,7 +150,13 @@ export default {
   user-select: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 882px) {
+  #navbar span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 790px) {
   #navbar {
     backdrop-filter: blur(15px);
   }

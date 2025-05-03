@@ -74,7 +74,7 @@
     "description": "Here, you can navigate through the content of all the pages using Unix commands.<br/>Use <strong>ls</strong> to list available files, then <strong>cat [filename]</strong> to read a file.<br/>You can also see all the available commands with <strong>help</strong>."
   },
   "card": {
-    "click-message": "Click to see",
+    "click-message": "See source code",
     "not-available": "Source not available",
     "categories": {
       "Linux & Config": "Linux & Config",
