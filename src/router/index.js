@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../pages/Home.vue';
-import AboutMe from '../pages/AboutMe.vue';
+import Journey from '../pages/Journey.vue';
 import Projects from '../pages/Projects.vue';
+import Skills from '../pages/Skills.vue';
 import Contact from '../pages/Contact.vue';
 import CommandLine from '../pages/CommandLine.vue';
 
 const routes = [
   { path: '/portfolio/', component: Home },
-  { path: '/portfolio/about-me', component: AboutMe },
+  { path: '/portfolio/journey', component: Journey },
   { path: '/portfolio/projects', component: Projects },
+  { path: '/portfolio/skills', component: Skills },
   { path: '/portfolio/contact', component: Contact },
   { path: '/portfolio/command-line', component: CommandLine },
 ];

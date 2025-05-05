@@ -1,0 +1,56 @@
+{
+  "skills": [
+    {
+      "name": {
+        "en": "System Administration",
+        "fr": "Administration Système"
+      },
+      "description": {
+        "en": "Managing Linux servers and automation.",
+        "fr": "Gestion de serveurs Linux et automatisation."
+      },
+      "percentage": 85,
+      "color": "#268BD2",
+      "icon": "fa-solid fa-server"
+    },
+    {
+      "name": {
+        "en": "Software Development",
+        "fr": "Développement Logiciel"
+      },
+      "description": {
+        "en": "Modern CI/CD pipelines and Rust or C# projects.",
+        "fr": "CI/CD modernes et projets en Rust ou C#."
+      },
+      "percentage": 38,
+      "color": "#8776D6",
+      "icon": "fa-solid fa-layer-group"
+    },
+    {
+      "name": {
+        "en": "Web Technologies",
+        "fr": "Technologies Web"
+      },
+      "description": {
+        "en": "Responsive web apps with Vue.",
+        "fr": "Applis web responsives avec Vue."
+      },
+      "percentage": 35,
+      "color": "#9FB6D9",
+      "icon": "fa-solid fa-globe"
+    },
+    {
+      "name": {
+        "en": "Database management",
+        "fr": "Gestion de bases de données"
+      },
+      "description": {
+        "en": "Conception, creation, data extraction, analysis...",
+        "fr": "Conception, création, extraction de données, analyse..."
+      },
+      "percentage": 86,
+      "color": "#fF65D9",
+      "icon": "fa-solid fa-database"
+    }
+  ]
+}

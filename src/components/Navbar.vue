@@ -4,18 +4,27 @@
       <i class="fas fa-home"></i>
       <span>{{ $t('navbar.home') }}</span>
     </router-link>
-    <router-link to="/portfolio/about-me" title="About me" active-class="active" @click.native="handleLinkClick">
+
+    <router-link to="/portfolio/journey" title="About me" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-circle-info"></i>
-      <span>{{ $t('navbar.about-me') }}</span>
+      <span>{{ $t('navbar.journey') }}</span>
     </router-link>
+
     <router-link to="/portfolio/projects" title="Projects" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-book"></i>
       <span>{{ $t('navbar.projects') }}</span>
     </router-link>
+
+    <router-link to="/portfolio/skills" title="Skills" active-class="active" @click.native="handleLinkClick">
+      <i class="fa-solid fa-wrench"></i>
+      <span>{{ $t('navbar.skills') }}</span>
+    </router-link>
+
     <router-link to="/portfolio/contact" title="Contact" active-class="active" @click.native="handleLinkClick">
       <i class="fas fa-comment"></i>
       <span>{{ $t('navbar.contact') }}</span>
     </router-link>
+
     <router-link to="/portfolio/command-line" title="Command line" active-class="active"
       @click.native="handleLinkClick">
       <i class="fas fa-terminal" style="font-size: 25px;"></i>

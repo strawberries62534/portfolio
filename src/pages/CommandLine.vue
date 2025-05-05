@@ -70,7 +70,7 @@ export default {
       for (const page in websiteText) {
         const pageContent = JSON.stringify(websiteText[page], null, 2); // Convert to pretty-printed JSON
         files.push({
-          name: `${page}.json`, // Create a file for each page (e.g., home.json, about-me.json)
+          name: `${page}.json`, // Create a file for each page (e.g., home.json, journey.json)
           content: pageContent,
         });
       }

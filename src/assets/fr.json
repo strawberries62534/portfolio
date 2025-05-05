@@ -5,8 +5,9 @@
   },
   "navbar": {
     "home": "Accueil",
-    "about-me": "À propos de moi",
+    "journey": "Mon parcours",
     "projects": "Projets",
+    "skills": "Mes compétences",
     "contact": "Contact",
     "command-line": "Ligne de commande"
   },
@@ -14,11 +15,11 @@
     "title": "Bienvenue sur mon Portfolio",
     "intro": "Bonjour, je suis étudiant de 1ère année en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
     "projects-button": "Voir mes Projets",
-    "aboutme-button": "A propos de moi",
+    "journey-button": "Voir mon Parcours",
     "contact-button": "Me contacter"
   },
-  "about-me": {
-    "title": "À propos de moi",
+  "journey": {
+    "title": "Mon Parcours",
     "skills": {
       "systems": "Linux & réseaux",
       "software": "Développement logiciel",

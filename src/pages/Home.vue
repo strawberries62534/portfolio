@@ -10,7 +10,7 @@
 
         <div class="cta-grid">
           <router-link to="/portfolio/projects" class="button">{{ $t('home.projects-button') }}</router-link>
-          <router-link to="/portfolio/about-me" class="button">{{ $t('home.aboutme-button') }}</router-link>
+          <router-link to="/portfolio/journey" class="button">{{ $t('home.aboutme-button') }}</router-link>
           <router-link to="/portfolio/contact" class="button">{{ $t('home.contact-button') }}</router-link>
         </div>
       </div>

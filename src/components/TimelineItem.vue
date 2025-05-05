@@ -8,7 +8,7 @@
         {{ content }}
       </p>
 
-      <span class="read-more">{{ $t('about-me.read-more') }} →</span>
+      <span class="read-more">{{ $t('journey.read-more') }} →</span>
     </div>
     <p class="aside-paragraph">{{ details }}</p>
     <Popup v-if="showPopup" :title="title" :content="popupContent" @close="closePopup" />

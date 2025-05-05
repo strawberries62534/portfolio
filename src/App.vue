@@ -84,6 +84,8 @@ export default {
 }
 
 #content {
+  will-change: transform;
+  transform: translateZ(0);
   margin-top: 140px;
   max-width: 70%;
   min-width: 70%;
@@ -92,7 +94,7 @@ export default {
   padding-top: 15px;
   margin-bottom: 100px;
   background-color: #151d2468;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(60px);
   border: 3px solid #6785bf55;
   border-radius: 18px;
   z-index: 1;
