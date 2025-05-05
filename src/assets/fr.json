@@ -27,11 +27,11 @@
     "read-more": "lire plus",
     "timeline": {
       "4": {
-        "date": "2024 - Présent",
+        "date": "2024 - Aujourd'hui",
         "title": "BUT Informatique",
         "content": "Étudiant de 1ère année explorant le monde de l'informatique et du développement logiciel.",
         "details": "Cette année, j’ai appris à développer et optimiser des applications, à gérer des systèmes informatiques complexes en réseau, à travailler avec l’information et les données, ainsi qu'à diriger un projet et collaborer au sein d’une équipe IT. Dans mon temps libre, je me suis aussi intéressé à des technologies passionnantes comme Rust et Nix.",
-        "popup": "Aucun détail supplémentaire."
+        "popup": "<h3>Programme 1ère année</h3>C1 : réaliser un développement d’application<br/>C2 : optimiser des applications<br/>C3 : administrer des systèmes informatiques communicants complexes<br/>C4 : gérer des données de l’information<br/>C5 : conduire un projet<br/>C6 : collaborer au sein d’une équipe informatique"
       },
       "3": {
         "date": "2021 - 2024",

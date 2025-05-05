@@ -28,11 +28,11 @@
     "read-more": "read more",
     "timeline": {
       "4": {
-        "date": "2024 - Present",
+        "date": "2024 - Today",
         "title": "BUT Informatique",
         "content": "1st-year student exploring the world of computer science and software development.",
         "details": "This year I have been learning to develop and optimize applications, manage complex networked IT systems, work with information and data, as well as to lead a project and collaborate within an IT team. In my free time, I have also been learning about exciting technologies like Rust and Nix.",
-        "popup": "No additional details."
+        "popup": "<h3>First-Year Program</h3>C1: Develop an application<br/>C2: Optimize applications<br/>C3: Administer complex communicating IT systems<br/>C4: Manage information data<br/>C5: Lead a project<br/>C6: Collaborate within an IT team"
       },
       "3": {
         "date": "2021 - 2024",

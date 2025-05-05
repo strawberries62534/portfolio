@@ -4,7 +4,7 @@
       <div class="popup-window">
         <button class="close-btn" @click="close">×</button>
         <h2>{{ title }}</h2>
-        <p v-html="content"></p>
+        <p class="popup-content" v-html="content"></p>
       </div>
     </div>
   </teleport>
@@ -59,6 +59,11 @@ export default {
 
 .popup-window h2 {
   margin-right: 120px;
+}
+
+.popup-content h3 {
+  font-size: 1.4rem;
+  margin-left: 0;
 }
 
 .close-btn {
