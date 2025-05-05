@@ -15,6 +15,8 @@
         </div>
       </div>
     </div>
+
+    <Logos class="logo-scroller"></Logos>
   </div>
 </template>
 
@@ -82,6 +84,7 @@ h1 span {
   width: 800px;
   margin: 0 auto;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .button {

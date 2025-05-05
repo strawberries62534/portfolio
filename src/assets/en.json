@@ -74,13 +74,15 @@
     "description": "Here, you can navigate through the content of all the pages using Unix commands.<br/>Use <strong>ls</strong> to list available files, then <strong>cat [filename]</strong> to read a file.<br/>You can also see all the available commands with <strong>help</strong>."
   },
   "card": {
-    "click-message": "See source code",
-    "not-available": "Source not available",
+    "click-message": "See details",
+    "not-available": "No details available",
+    "source": "Source code",
+    "no-source": "Source code is not available",
     "categories": {
       "Linux & Config": "Linux & Config",
       "Scripting & Automation": "Scripting & Automation",
       "Web & Frontend": "Web & Frontend",
-      "Game Development": "Game Development",
+      "Software Development": "Software Development",
       "System Tools": "System Tools",
       "APIs & Integration": "APIs & Integration",
       "Data & Analysis": "Data & Analysis",

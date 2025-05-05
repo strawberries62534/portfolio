@@ -3,8 +3,15 @@
     <div class="popup-overlay" @click.self="close">
       <div class="popup-window">
         <button class="close-btn" @click="close">×</button>
+
         <h2>{{ title }}</h2>
-        <p class="popup-content" v-html="content"></p>
+
+        <p class="popup-content" v-if="content" v-html="content"></p>
+        <p class="popup-content" v-else>{{ $t('card.not-available') }}</p>
+
+        <div class="button-container">
+          <a :href="link" target="_blank" class="button" v-if="link">{{ $t('card.source') }}</a>
+        </div>
       </div>
     </div>
   </teleport>
@@ -12,7 +19,7 @@
 
 <script>
 export default {
-  props: ['title', 'content'],
+  props: ['title', 'content', 'link'],
   emits: ['close'],
 
   methods: {
@@ -51,9 +58,9 @@ export default {
   backdrop-filter: blur(25px);
   padding: 2rem;
   border-radius: 25px;
-  max-width: 80%;
+  max-width: 50%;
   position: relative;
-  border: 2px solid rgba(103, 133, 191, 0.6);
+  border: 3px solid rgba(103, 133, 191, 0.6);
   transform: translate(0, 0);
 }
 
@@ -64,6 +71,14 @@ export default {
 .popup-content h3 {
   font-size: 1.4rem;
   margin-left: 0;
+  margin-top: 30px;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .close-btn {

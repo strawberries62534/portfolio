@@ -73,13 +73,15 @@
     "description": "Ici, vous pouvez naviguer dans le contenu de toutes les pages en utilisant des commandes Unix.<br/>Utilisez <strong>ls</strong> pour lister les fichiers disponibles, puis <strong>cat [nom_du_fichier]</strong> pour lire un fichier.<br/>Vous pouvez également voir toutes les commandes disponibles avec <strong>help</strong>."
   },
   "card": {
-    "click-message": "Voir le code source",
-    "not-available": "Source privée",
+    "click-message": "Voir les details",
+    "not-available": "Aucun détail disponible",
+    "source": "Code source",
+    "no-source": "Le code source n'est pas disponnible",
     "categories": {
       "Linux & Config": "Linux & Config",
       "Scripting & Automation": "Scripting & Automation",
       "Web & Frontend": "Web & Frontend",
-      "Game Development": "Développement de jeux",
+      "Software Development": "Développement d'applications",
       "System Tools": "Outils système",
       "APIs & Integration": "APIs & Integration",
       "Data & Analysis": "Analyse de Données",

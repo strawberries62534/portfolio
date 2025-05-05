@@ -1,11 +1,10 @@
 <template>
-  <a class="card" :href="isValidLink ? file : null" :class="{ disabled: !isValidLink }" @click="handleClick"
-    target="_blank">
+  <div class="card" @click="openPopup" target="_blank">
     <div class="card-bg" :style="'background-image: url(' + preview + ');'"></div>
 
     <div class="card-content">
       <div class="popup">
-        <h2>{{ isValidLink ? $t('card.click-message') : $t('card.not-available') }}</h2>
+        <h2>{{ $t('card.click-message') }}</h2>
       </div>
 
       <div class="true-content">
@@ -18,25 +17,38 @@
         <p>{{ description }}</p>
       </div>
     </div>
-  </a>
+
+    <Popup class="popup-content" v-if="showPopup" :title="name" :content="popupContent" :link="file"
+      @close="closePopup" />
+  </div>
 </template>
 
 <script>
-export default {
-  props: ['name', 'description', 'date', 'preview', 'file', 'categories'],
+import Popup from './Popup.vue';
 
-  computed: {
-    isValidLink() {
-      return this.file && this.file !== '#';
-    }
+export default {
+  components: {
+    Popup,
+  },
+
+  props: ['name', 'description', 'date', 'preview', 'file', 'categories', 'details'],
+
+  data() {
+    return {
+      showPopup: false,
+      popupContent: '',
+    };
   },
 
   methods: {
-    handleClick(event) {
-      if (!this.isValidLink) {
-        event.preventDefault();
-      }
-    }
+    openPopup() {
+      const lang = this.$i18n.locale;
+      this.popupContent = this.details?.[lang] || '';
+      this.showPopup = true;
+    },
+    closePopup() {
+      this.showPopup = false;
+    },
   }
 
 }
@@ -44,6 +56,7 @@ export default {
 
 <style scoped>
 .card:hover {
+  cursor: pointer;
   transform: scale(1.01);
   border-color: #6785bfff;
 }

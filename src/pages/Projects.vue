@@ -13,7 +13,7 @@
 
     <div class="cards">
       <Card v-for="card in filteredCards" :key="card.id" :name="card.name" :description="card.description[locale]"
-        :preview="card.preview" :file="card.file" :categories="card.categories" />
+        :preview="card.preview" :file="card.file" :categories="card.categories" :details="card.details" />
       <div class="footer"></div>
     </div>
   </div>

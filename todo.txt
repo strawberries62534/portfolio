@@ -1,0 +1,9 @@
+a propos de moi -> cursus/parcours/formation
+
+plan à appliquer sur les projets (popups, avec lien vers code source ("Voir les détails")):
+  - contexte
+  - objectifs
+  - livrables
+  - compétences acquises
+
+ajout de page: compétences (techniques, BUT, qualités...)

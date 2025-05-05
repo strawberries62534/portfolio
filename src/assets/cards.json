@@ -13,7 +13,11 @@
       "categories": [
         "Linux & Config",
         "Scripting & Automation"
-      ]
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>J'utilise Arch Linux avec Hyprland, une configuration qui encourage à bâtir soi-même son environnement.<h3>Objectifs</h3>J'essaie de créer un environnement de travail sans distractions, qui ne sacrifie pas son apparence.</br>Toute la navigation est au clavier, et de nombreux outils sont intégrés pour intéragir entre eux afin d'atteindre une productivité maximale.",
+        "en": "No additional details"
+      }
     },
     {
       "id": 2,
@@ -29,7 +33,11 @@
         "Web & Frontend",
         "APIs & Integration",
         "Data & Analysis"
-      ]
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>J'ai longtemps eu besoin d'un moyen de voir quels titres et artistes j'écoute le plus sur Spotify. Il se trouve qu'il existe une API officielle permettant d'accéder à ces données. J'ai choisi de créer une petite plateforme qui demande à l'utilisateur de connecter son compte Spotify, sécurisé avec OAuth 2.0. Les requetes sont faites en TypeScript.<h3>Compétences acquises</h3>J'ai appris à me documenter sur une API, et à créer des requetes sécurisées tout en respectant les taux et fréquences autorisées.",
+        "en": "No additional details"
+      }
     },
     {
       "id": 3,
@@ -42,8 +50,12 @@
       "preview": "./rpg.png",
       "file": "https://github.com/eiiko6/DOPJB-2024",
       "categories": [
-        "Game Development"
-      ]
+        "Software Development"
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>Mon lycée a organisé un jeu de rôles grandeur nature comme évènement de fin d'année. J'ai eu la chance d'être au coeur de la création du projet, et en tant que seul développeur j'ai commencé à créer une application en Python.<br/>Le choix du langage était justifié par l'attente d'autres développeurs: Python est plus accessible.<h3>Objectifs</h3>Le projet s'est avéré très ambitieux: la deadline est arrivée très vite. J'ai du créer un système d'interprétation de documents Excel pour pouvoir déléguer la conception des données et l'équilibrage à d'autres membres de l'équipe. J'ai aussi participé à la direction artistique.<h3>Compétences acquises</h3>J'ai appris à déléguer des taches à une équipe. J'ai appris des bases sur les structures de données et l'algorithmie en Python.",
+        "en": "No additional details"
+      }
     },
     {
       "id": 4,
@@ -57,7 +69,11 @@
       "file": "https://github.com/eiiko6/ShinyBot",
       "categories": [
         "APIs & Integration"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 5,
@@ -70,8 +86,12 @@
       "preview": "./flappigeon.png",
       "file": "",
       "categories": [
-        "Game Development"
-      ]
+        "Software Development"
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 6,
@@ -86,7 +106,11 @@
       "categories": [
         "Linux & Config",
         "Scripting & Automation"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 7,
@@ -102,7 +126,11 @@
         "Linux & Config",
         "Scripting & Automation",
         "System Tools"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 8,
@@ -118,7 +146,11 @@
         "Linux & Config",
         "Scripting & Automation",
         "System Tools"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 9,
@@ -133,7 +165,11 @@
       "categories": [
         "Linux & Config",
         "Scripting & Automation"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 10,
@@ -147,7 +183,11 @@
       "file": "https://github.com/eiiko6/Ryn",
       "categories": [
         "System Tools"
-      ]
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>Dans mon apprentissage du langage Rust, j'ai décidé de créer un shell en partant de zéro: c'est un exercice passionnant qui permet d'explorer une partie de ce à quoi touche le langage.<h3>Objectifs</h3>Le shell implémente des fonctionnalités qui l'obligent à interagir avec les fichiers, à gérer du multithreading, et à utiliser des structures de données efficaces.<h3>Livrables</h3>Je documente au mieux possible le projet, et je fournis des analyses de qualité de code avec la CI de Github.<h3>Compétences acquises</h3>J'ai appris les bases du lanagage Rust, et ainsi les enjeux de la gestion et sécurité mémoire.<br/>Les contraintes du crossplatforme force l'utilisation de solutions durables et efficaces.",
+        "en": "<h3>Context</h3>placeholder<h3>Goals</h3>placeholder 2<h3>Products</h3>placeholder 3<h3>Skills developed</h3>placeholder 4"
+      }
     },
     {
       "id": 11,
@@ -161,7 +201,11 @@
       "file": "",
       "categories": [
         "School Projects"
-      ]
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>Dans ce projet de BUT, il nous était imposé des fonctionnalités de gestion de stages. Nous devions implémenter nos algorithmes et structures de données en C (tris, listes chaînées...). Nous étions en groupes de 2, en première collaboration avec Git.<h3>Compétences acquises</h3>C'était une occasion majeure pour apprendre comment fonctionne la mémoire, et comment sont structurés les conteneurs dans les langages de plus haut niveau.",
+        "en": "No additional details"
+      }
     },
     {
       "id": 12,
@@ -176,22 +220,30 @@
       "categories": [
         "School Projects",
         "System Tools"
-      ]
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
+      }
     },
     {
       "id": 13,
       "name": "Pecking Pairs",
       "description": {
         "en": "A memory game built in a team using .NET MAUI.",
-        "fr": "Un jeu de mémoire créé en équipe avec .NET MAUI."
+        "fr": "Un jeu de memory créé en équipe avec .NET MAUI."
       },
-      "importance": "10",
-      "preview": "",
+      "importance": "64",
+      "preview": "./peckingpairs.png",
       "file": "",
       "categories": [
         "School Projects",
-        "Game Development"
-      ]
+        "Software Development"
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>Ce projet en groupes de 3 représentait le projet final de la première année de BUT informatique: il applique beaucoup de compétences comme la gestion de projet et la programmation orientée objet.<h3>Objectifs</h3>Il nous était demandé de créer un jeu de plateau de type grille, avec .NET MAUI. Mon groupe a choisi un jeu de memory arrangé.<br/>Nous avons du gérer toute la planification et le suivi du projet aussi bien que la documentation du code, et le contrôle de qualité avec les outils Drone et Sonar.<h3>Livrables</h3>De nombreux jalons ont été imposés, où nous avons rendu des comptes rendus de suivi de projet. Au final, une vidéo de promotion a été réalisée en plus de la documentation complète du code.<h3>Compétences acquises</h3>J'ai appris à collaborer sur une codebase complexe et grandissante composée de nombreux modules.<br/>J'ai appris à concevoir une application de A à Z, en commencant par les sketches, persona et storyboards, passant par la documentation et la gestion de projet.<br/>J'ai également appris à créer des diagrammes UML comme les diagrammes de classes, de paquetages ou de cas d'utilisation.",
+        "en": "No additional details"
+      }
     },
     {
       "id": 14,
@@ -206,7 +258,11 @@
       "categories": [
         "School Projects",
         "Data & Analysis"
-      ]
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>Nous avons extrait les données d'études récupérées en ligne. Mon groupe de 4 personnes a choisi d'analyser des données sur les troubles mentaux.<h3>Objectifs</h3>Nous devions créer une base de données pour tout organiser.<br/>Puis nous avons réalisé une analyse complète avec les outils Pandas, SQLalchemy et Matplotlib en Python.<h3>Livrables</h3>Nous avons généré des graphes de différents types.<br/>Le tout a été présenté lors d'un oral en anglais.<h3>Compétences acquises</h3>J'ai appris à concevoir une base de données, à travailler en équipe, à générer et interpréter différents types de représentations graphiques...",
+        "en": "<h3>Context</h3>placeholder<h3>Goals</h3>placeholder 2<h3>Products</h3>placeholder 3<h3>Skills developed</h3>placeholder 4"
+      }
     }
   ]
 }
