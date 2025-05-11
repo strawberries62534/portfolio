@@ -8,15 +8,16 @@
     "journey": "Mon parcours",
     "projects": "Projets",
     "skills": "Mes compétences",
-    "contact": "Contact",
-    "command-line": "Ligne de commande"
+    "contact": "Contact"
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
     "intro": "Bonjour, je suis étudiant de 1ère année en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
     "projects-button": "Voir mes Projets",
     "journey-button": "Voir mon Parcours",
-    "contact-button": "Me contacter"
+    "contact-button": "Me contacter",
+    "command-line": "Si vous voulez, il y a un petit truc en ligne de commande sur ce site:",
+    "command-line-button": "Ligne de Commande"
   },
   "journey": {
     "title": "Mon Parcours",

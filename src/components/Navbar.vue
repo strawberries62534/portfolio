@@ -25,11 +25,11 @@
       <span>{{ $t('navbar.contact') }}</span>
     </router-link>
 
-    <router-link to="/portfolio/command-line" title="Command line" active-class="active"
-      @click.native="handleLinkClick">
-      <i class="fas fa-terminal" style="font-size: 25px;"></i>
-      <span>{{ $t('navbar.command-line') }}</span>
-    </router-link>
+    <!-- <router-link to="/portfolio/command-line" title="Command line" active-class="active" -->
+    <!--   @click.native="handleLinkClick"> -->
+    <!--   <i class="fas fa-terminal" style="font-size: 25px;"></i> -->
+    <!--   <span>{{ $t('navbar.command-line') }}</span> -->
+    <!-- </router-link> -->
 
     <p class="dot">•</p>
 

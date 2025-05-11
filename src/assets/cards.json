@@ -71,7 +71,7 @@
         "APIs & Integration"
       ],
       "details": {
-        "fr": "Pas de détails supplémentaires",
+        "fr": "<h3>Contexte</h3>Pendant la pandémie, j'ai modéré un serveur Discord. J'ai eu envie de créer un bot pour automatiser la gestion des utilisateurs et des droits.<h3>Compétences acquises</h3>J'ai appris à créer une application serveur qui intéragit avec une API. J'ai appris à modulariser un projet, et à ne pas partager mes clés privées sur un dépot public 😭",
         "en": "No additional details"
       }
     },

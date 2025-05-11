@@ -10,13 +10,19 @@
 
         <div class="cta-grid">
           <router-link to="/portfolio/projects" class="button">{{ $t('home.projects-button') }}</router-link>
-          <router-link to="/portfolio/journey" class="button">{{ $t('home.aboutme-button') }}</router-link>
+          <router-link to="/portfolio/journey" class="button">{{ $t('home.journey-button') }}</router-link>
           <router-link to="/portfolio/contact" class="button">{{ $t('home.contact-button') }}</router-link>
         </div>
       </div>
+
+      <Logos class="logo-scroller"></Logos>
+
+      <div class="commandline">
+        <p>{{ $t('home.command-line') }}</p>
+        <router-link to="/portfolio/command-line" class="button">{{ $t('home.command-line-button') }}</router-link>
+      </div>
     </div>
 
-    <Logos class="logo-scroller"></Logos>
   </div>
 </template>
 
@@ -89,6 +95,13 @@ h1 span {
 
 .button {
   margin-bottom: 20px;
+}
+
+.commandline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

@@ -8,8 +8,7 @@
     "journey": "My Journey",
     "projects": "Projects",
     "skills": "My Skills",
-    "contact": "Contact",
-    "command-line": "Command line"
+    "contact": "Contact"
   },
   "home": {
     "title": "Welcome to my Portfolio",
@@ -17,7 +16,9 @@
     "intro": "Hi, I'm a 1st-year Computer Science student in the \"BUT Informatique\" program in Clermont-Ferrand (France).<br />I love coding, tinkering with my OS, and creating efficient solutions to problems.<br />Besides tech I try to learn piano and sometimes draw.<br />Welcome to my portfolio!",
     "projects-button": "Go to Projects",
     "journey-button": "See My Journey",
-    "contact-button": "Contact me"
+    "contact-button": "Contact me",
+    "command-line": "If you'd like, there is a fun command line thing on this website:",
+    "command-line-button": "Command Line"
   },
   "journey": {
     "title": "My Journey",
