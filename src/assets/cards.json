@@ -16,7 +16,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>J'utilise Arch Linux avec Hyprland, une configuration qui encourage à bâtir soi-même son environnement.<h3>Objectifs</h3>J'essaie de créer un environnement de travail sans distractions, qui ne sacrifie pas son apparence.</br>Toute la navigation est au clavier, et de nombreux outils sont intégrés pour intéragir entre eux afin d'atteindre une productivité maximale.",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>I use Arch Linux with Hyprland, a setup that encourages building your own environment.<h3>Goals</h3>I'm aiming to create a distraction-free work environment that doesn't compromise on looks. Everything is keyboard-driven, and many tools are integrated to interact with each other for maximum productivity."
       }
     },
     {
@@ -36,7 +36,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>J'ai longtemps eu besoin d'un moyen de voir quels titres et artistes j'écoute le plus sur Spotify. Il se trouve qu'il existe une API officielle permettant d'accéder à ces données. J'ai choisi de créer une petite plateforme qui demande à l'utilisateur de connecter son compte Spotify, sécurisé avec OAuth 2.0. Les requetes sont faites en TypeScript.<h3>Compétences acquises</h3>J'ai appris à me documenter sur une API, et à créer des requetes sécurisées tout en respectant les taux et fréquences autorisées.",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>I’ve always wanted a way to view my most listened tracks and artists on Spotify. It turns out there's an official API to access this data. I decided to build a small platform where users can connect their Spotify accounts via OAuth 2.0. The requests are made in TypeScript.<h3>Skills developed</h3>I learned how to research and use an API, and how to make secure, rate-compliant queries."
       }
     },
     {
@@ -54,7 +54,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Mon lycée a organisé un jeu de rôles grandeur nature comme évènement de fin d'année. J'ai eu la chance d'être au coeur de la création du projet, et en tant que seul développeur j'ai commencé à créer une application en Python.<br/>Le choix du langage était justifié par l'attente d'autres développeurs: Python est plus accessible.<h3>Objectifs</h3>Le projet s'est avéré très ambitieux: la deadline est arrivée très vite. J'ai du créer un système d'interprétation de documents Excel pour pouvoir déléguer la conception des données et l'équilibrage à d'autres membres de l'équipe. J'ai aussi participé à la direction artistique.<h3>Compétences acquises</h3>J'ai appris à déléguer des taches à une équipe. J'ai appris des bases sur les structures de données et l'algorithmie en Python.",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>My high school organized a live-action role-playing game for the end of the year. I was at the heart of the project and, as the only developer, I began creating a Python application.<br/>The language choice was justified by accessibility for others.<h3>Goals</h3>The project turned out to be very ambitious, and deadlines came fast. I had to create a system to interpret Excel files so I could delegate data design and balancing to others. I also took part in the artistic direction.<h3>Skills developed</h3>I learned to delegate tasks to a team and gained fundamentals in data structures and algorithms in Python."
       }
     },
     {
@@ -72,7 +72,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Pendant la pandémie, j'ai modéré un serveur Discord. J'ai eu envie de créer un bot pour automatiser la gestion des utilisateurs et des droits.<h3>Compétences acquises</h3>J'ai appris à créer une application serveur qui intéragit avec une API. J'ai appris à modulariser un projet, et à ne pas partager mes clés privées sur un dépot public 😭",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>During the pandemic, I moderated a Discord server. I wanted to create a bot to automate user and permission management.<h3>Skills developed</h3>I learned how to create a server-side app that interacts with an API. I learned to modularize a project — and not to share private keys on a public repo 😭"
       }
     },
     {
@@ -186,7 +186,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Dans mon apprentissage du langage Rust, j'ai décidé de créer un shell en partant de zéro: c'est un exercice passionnant qui permet d'explorer une partie de ce à quoi touche le langage.<h3>Objectifs</h3>Le shell implémente des fonctionnalités qui l'obligent à interagir avec les fichiers, à gérer du multithreading, et à utiliser des structures de données efficaces.<h3>Livrables</h3>Je documente au mieux possible le projet, et je fournis des analyses de qualité de code avec la CI de Github.<h3>Compétences acquises</h3>J'ai appris les bases du lanagage Rust, et ainsi les enjeux de la gestion et sécurité mémoire.<br/>Les contraintes du crossplatforme force l'utilisation de solutions durables et efficaces.",
-        "en": "<h3>Context</h3>placeholder<h3>Goals</h3>placeholder 2<h3>Products</h3>placeholder 3<h3>Skills developed</h3>placeholder 4"
+        "en": "<h3>Context</h3>As part of learning Rust, I decided to build a shell from scratch — a great exercise to explore various aspects of the language.<h3>Goals</h3>The shell implements features that require file handling, multithreading, and efficient data structures.<h3>Products</h3>I aim to document the project thoroughly and provide code quality analysis with GitHub CI.<h3>Skills developed</h3>I learned the basics of Rust and the importance of memory safety. Cross-platform constraints forced me to adopt sustainable and efficient solutions."
       }
     },
     {
@@ -204,7 +204,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Dans ce projet de BUT, il nous était imposé des fonctionnalités de gestion de stages. Nous devions implémenter nos algorithmes et structures de données en C (tris, listes chaînées...). Nous étions en groupes de 2, en première collaboration avec Git.<h3>Compétences acquises</h3>C'était une occasion majeure pour apprendre comment fonctionne la mémoire, et comment sont structurés les conteneurs dans les langages de plus haut niveau.",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>This BUT project required us to implement internship management features. We had to implement our own sorting algorithms and data structures in C (like sorting, linked lists...). We worked in pairs, using Git for the first time.<h3>Skills developed</h3>It was a major opportunity to learn how memory works and how containers are structured in higher-level languages."
       }
     },
     {
@@ -242,7 +242,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Ce projet en groupes de 3 représentait le projet final de la première année de BUT informatique: il applique beaucoup de compétences comme la gestion de projet et la programmation orientée objet.<h3>Objectifs</h3>Il nous était demandé de créer un jeu de plateau de type grille, avec .NET MAUI. Mon groupe a choisi un jeu de memory arrangé.<br/>Nous avons du gérer toute la planification et le suivi du projet aussi bien que la documentation du code, et le contrôle de qualité avec les outils Drone et Sonar.<h3>Livrables</h3>De nombreux jalons ont été imposés, où nous avons rendu des comptes rendus de suivi de projet. Au final, une vidéo de promotion a été réalisée en plus de la documentation complète du code.<h3>Compétences acquises</h3>J'ai appris à collaborer sur une codebase complexe et grandissante composée de nombreux modules.<br/>J'ai appris à concevoir une application de A à Z, en commencant par les sketches, persona et storyboards, passant par la documentation et la gestion de projet.<br/>J'ai également appris à créer des diagrammes UML comme les diagrammes de classes, de paquetages ou de cas d'utilisation.",
-        "en": "No additional details"
+        "en": "<h3>Context</h3>This 3-person group project was the final project of our first year in my CS bachelor. It applied many skills like project management and object-oriented programming.<h3>Goals</h3>We were asked to build a grid-style board game using .NET MAUI. My group chose a modified memory game.<br/>We handled all planning, code documentation, and quality control using tools like Drone and Sonar.<h3>Products</h3>We had multiple milestones where we submitted project follow-up reports. In the end, we delivered a promo video alongside complete documentation.<h3>Skills developed</h3>I learned to collaborate on a growing and modular codebase, to design a full application from sketches to storyboards and documentation, and to produce UML diagrams (class, package, use case…)."
       }
     },
     {
@@ -261,7 +261,27 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Nous avons extrait les données d'études récupérées en ligne. Mon groupe de 4 personnes a choisi d'analyser des données sur les troubles mentaux.<h3>Objectifs</h3>Nous devions créer une base de données pour tout organiser.<br/>Puis nous avons réalisé une analyse complète avec les outils Pandas, SQLalchemy et Matplotlib en Python.<h3>Livrables</h3>Nous avons généré des graphes de différents types.<br/>Le tout a été présenté lors d'un oral en anglais.<h3>Compétences acquises</h3>J'ai appris à concevoir une base de données, à travailler en équipe, à générer et interpréter différents types de représentations graphiques...",
-        "en": "<h3>Context</h3>placeholder<h3>Goals</h3>placeholder 2<h3>Products</h3>placeholder 3<h3>Skills developed</h3>placeholder 4"
+        "en": "<h3>Context</h3>We extracted study data gathered online. My group of four people chose to analyze data on mental health disorders.<h3>Objectives</h3>We had to create a database to organize everything.<br/>Then, we carried out a complete analysis using Pandas, SQLAlchemy, and Matplotlib in Python.<h3>Deliverables</h3>We generated various types of graphs.<br/>Everything was presented during an oral presentation in English.<h3>Skills acquired</h3>I learned how to design a database, work in a team, and generate and interpret different types of graphical representations..."
+      }
+    },
+    {
+      "id": 15,
+      "name": "hyprkeymap",
+      "description": {
+        "en": "A Hyprland key bindings manager written in Rust. This is a rewrite of my C++ hyprbindings",
+        "fr": "Un gestionnaire de raccourcis clavier pour Hyprland, écrit en Rust. C'est une recréation de mon hyprbindings C++"
+      },
+      "importance": "60",
+      "preview": "./keymap.png",
+      "file": "https://github.com/eiiko6/hyprkeymap",
+      "categories": [
+        "Linux & Config",
+        "Scripting & Automation",
+        "System Tools"
+      ],
+      "details": {
+        "fr": "Pas de détails supplémentaires",
+        "en": "No additional details"
       }
     }
   ]

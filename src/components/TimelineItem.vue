@@ -11,7 +11,7 @@
       <span class="read-more">{{ $t('journey.read-more') }} →</span>
     </div>
     <p class="aside-paragraph">{{ details }}</p>
-    <Popup v-if="showPopup" :title="title" :content="popupContent" @close="closePopup" />
+    <Popup v-if="showPopup" :title="title" :content="popupContent" @close="closePopup" class="popup" />
   </div>
 </template>
 

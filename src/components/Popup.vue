@@ -51,6 +51,9 @@ export default {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
+  overflow-y: auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .popup-window {
@@ -62,6 +65,8 @@ export default {
   position: relative;
   border: 3px solid rgba(103, 133, 191, 0.6);
   transform: translate(0, 0);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .popup-window h2 {
@@ -98,7 +103,8 @@ export default {
 
 @media (max-width: 600px) {
   .popup-window {
-    width: 95%;
+    max-width: 85%;
+    width: 85%;
     padding: 1rem;
   }
 

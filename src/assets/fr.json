@@ -7,11 +7,12 @@
     "home": "Accueil",
     "journey": "Mon parcours",
     "projects": "Projets",
-    "skills": "Mes compétences",
+    "skills": "Compétences & qualités",
     "contact": "Contact"
   },
   "home": {
     "title": "Bienvenue sur mon Portfolio",
+    "subtitle": "Hacker système, créateur d'outils & minimaliste web.",
     "intro": "Bonjour, je suis étudiant de 1ère année en \"BUT Informatique\" à Clermont-Ferrand (France).<br />J'adore coder, bricoler avec mon système d'exploitation et créer des solutions efficaces aux problèmes.<br />En dehors de la tech, j'essaie d'apprendre le piano et je dessine parfois.<br />Bienvenue sur mon portfolio !",
     "projects-button": "Voir mes Projets",
     "journey-button": "Voir mon Parcours",
@@ -33,7 +34,7 @@
         "title": "BUT Informatique",
         "content": "Étudiant de 1ère année explorant le monde de l'informatique et du développement logiciel.",
         "details": "Cette année, j’ai appris à développer et optimiser des applications, à gérer des systèmes informatiques complexes en réseau, à travailler avec l’information et les données, ainsi qu'à diriger un projet et collaborer au sein d’une équipe IT. Dans mon temps libre, je me suis aussi intéressé à des technologies passionnantes comme Rust et Nix.",
-        "popup": "<h3>Programme 1ère année</h3>C1 : réaliser un développement d’application<br/>C2 : optimiser des applications<br/>C3 : administrer des systèmes informatiques communicants complexes<br/>C4 : gérer des données de l’information<br/>C5 : conduire un projet<br/>C6 : collaborer au sein d’une équipe informatique"
+        "popup": "<div style='text-align: center;'><img src='./iut.png' alt='image' style='width: 60%; border-radius: 20px; border: 3px solid #6785bf;'></div><h3>Programme 1ère année</h3>C1 : réaliser un développement d’application<br/>C2 : optimiser des applications<br/>C3 : administrer des systèmes informatiques communicants complexes<br/>C4 : gérer des données de l’information<br/>C5 : conduire un projet<br/>C6 : collaborer au sein d’une équipe informatique"
       },
       "3": {
         "date": "2021 - 2024",
@@ -65,6 +66,9 @@
       "importance": "importance",
       "name": "nom"
     }
+  },
+  "skills": {
+    "title": "Compétences & qualités"
   },
   "contact": {
     "title": "Contact",

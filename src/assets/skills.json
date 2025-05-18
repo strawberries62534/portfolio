@@ -52,5 +52,47 @@
       "color": "#fF65D9",
       "icon": "fa-solid fa-database"
     }
+  ],
+  "strengths": [
+    {
+      "name": {
+        "en": "Self-taught",
+        "fr": "Autodidacte"
+      },
+      "description": {
+        "en": "I can learn by myself if required.",
+        "fr": "Je suis capable d'apprendre par moi-même quand j'en ai besoin."
+      }
+    },
+    {
+      "name": {
+        "en": "Problem Solver",
+        "fr": "Résolution de problèmes"
+      },
+      "description": {
+        "en": "I enjoy tackling complex issues and finding effective solutions.",
+        "fr": "J'aime résoudre des problèmes complexes et trouver des solutions efficaces."
+      }
+    },
+    {
+      "name": {
+        "en": "Adaptable",
+        "fr": "Capacité d'adaptation"
+      },
+      "description": {
+        "en": "I adapt quickly to new environments, tools, and challenges.",
+        "fr": "Je m'adapte rapidement à de nouveaux environnements, outils et défis."
+      }
+    },
+    {
+      "name": {
+        "en": "Detail-Oriented",
+        "fr": "Souci du détail"
+      },
+      "description": {
+        "en": "I pay close attention to detail to ensure high-quality work.",
+        "fr": "Je porte une grande attention aux détails afin de garantir un travail de qualité."
+      }
+    }
   ]
 }

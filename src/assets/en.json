@@ -22,6 +22,11 @@
   },
   "journey": {
     "title": "My Journey",
+    "skills": {
+      "systems": "Linux & networks",
+      "software": "Software development",
+      "web": "Web languages"
+    },
     "read-more": "read more",
     "timeline": {
       "4": {
@@ -29,7 +34,7 @@
         "title": "BUT Informatique",
         "content": "1st-year student exploring the world of computer science and software development.",
         "details": "This year I have been learning to develop and optimize applications, manage complex networked IT systems, work with information and data, as well as to lead a project and collaborate within an IT team. In my free time, I have also been learning about exciting technologies like Rust and Nix.",
-        "popup": "<h3>First-Year Program</h3>C1: Develop an application<br/>C2: Optimize applications<br/>C3: Administer complex communicating IT systems<br/>C4: Manage information data<br/>C5: Lead a project<br/>C6: Collaborate within an IT team"
+        "popup": "<div style='text-align: center;'><img src='./iut.png' alt='image' style='width: 60%; border-radius: 20px; border: 3px solid #6785bf;'></div><h3>First-Year Program</h3>C1: Develop an application<br/>C2: Optimize applications<br/>C3: Administer complex communicating IT systems<br/>C4: Manage information data<br/>C5: Lead a project<br/>C6: Collaborate within an IT team"
       },
       "3": {
         "date": "2021 - 2024",

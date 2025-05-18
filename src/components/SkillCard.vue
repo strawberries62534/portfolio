@@ -2,11 +2,11 @@
   <div class="skill-item">
     <div class="skill-bubble" @click="showDetails = !showDetails">
       <div class="skill-header">
-        <i :class="['skill-icon', icon]"></i>
-        <h3 class="skill-title">{{ skillName }}</h3>
+        <i v-if="icon" :class="['skill-icon', icon]"></i>
+        <h3 class="skill-title">{{ name }}</h3>
       </div>
 
-      <div class="skill-gauge">
+      <div v-if="percentage" class="skill-gauge">
         <div class="gauge-track">
           <div class="gauge-fill" :style="{ width: percentage + '%', backgroundColor: color }"></div>
         </div>
@@ -23,7 +23,7 @@
 export default {
   name: "SkillCard",
   props: {
-    skillName: {
+    name: {
       type: String,
       required: true,
     },
@@ -75,13 +75,6 @@ export default {
   margin-bottom: 1rem;
 }
 
-.skill-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
 .skill-title {
   font-size: 1.6rem;
   margin: 0;
@@ -124,23 +117,70 @@ export default {
   margin-top: 1rem;
 }
 
-@media (max-width: 700px) {
-  .skill-bubble {
-    width: 100%;
-    padding: 1rem;
+@media (max-width: 1000px) {
+  .skill-description {
+    font-size: 0.8rem;
   }
 
   .skill-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .skill-item {
+    padding: 0 0.5rem;
+  }
+
+  .skill-bubble {
+    padding: 1rem;
+  }
+
+  .skill-icon {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .skill-bubble {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .skill-title {
+    font-size: 1.2rem;
   }
 
   .gauge-percentage {
     font-size: 0.85rem;
   }
 
-  .skill-image {
-    width: 50px;
-    height: 50px;
+  .skill-icon {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .skill-icon {
+    margin: 0;
+    margin-right: 8px;
+    padding: 0;
+  }
+
+  .skill-header {
+    gap: 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .skill-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .skill-title {
+    font-size: 1rem;
   }
 }
 </style>
