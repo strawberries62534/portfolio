@@ -95,21 +95,22 @@
     },
     {
       "id": 6,
-      "name": "Linux config switcher",
+      "name": "dotswitch",
       "description": {
-        "en": "A small Bash script that allows you to quickly and seamlessly switch between multiple dotfiles configurations.",
-        "fr": "Un petit script Bash qui vous permet de changer rapidement et de manière transparente entre plusieurs configurations de dotfiles."
+        "en": "A Rust program that allows you to quickly and seamlessly switch between multiple dotfiles configurations.",
+        "fr": "Un programme en Rust qui permet de changer rapidement et de manière transparente entre plusieurs configurations de dotfiles."
       },
       "importance": "51",
       "preview": "./themeswitcher.png",
-      "file": "https://github.com/eiiko6/theme-switcher",
+      "file": "https://github.com/eiiko6/dotswitch",
       "categories": [
         "Linux & Config",
+        "Rust",
         "Scripting & Automation"
       ],
       "details": {
-        "fr": "Pas de détails supplémentaires",
-        "en": "No additional details"
+        "fr": "C'était beaucoup de gestion d'erreurs en Rust. Aussi du I/O, de la gestion de config, et du parsing d'arguments.",
+        "en": "This was a lot of error management in Rust. And also I/O, config management and argument parsing."
       }
     },
     {
@@ -134,14 +135,14 @@
     },
     {
       "id": 8,
-      "name": "hyprkeymap",
+      "name": "hyprbindings",
       "description": {
         "en": "A Hyprland key bindings manager written in C++",
         "fr": "Un gestionnaire de raccourcis clavier pour Hyprland, écrit en C++"
       },
       "importance": "60",
       "preview": "./bindings.png",
-      "file": "https://github.com/eiiko6/hyprkeymap",
+      "file": "https://github.com/eiiko6/hyprbindings",
       "categories": [
         "Linux & Config",
         "Scripting & Automation",
@@ -182,6 +183,7 @@
       "preview": "./ryn.png",
       "file": "https://github.com/eiiko6/Ryn",
       "categories": [
+        "Rust",
         "System Tools"
       ],
       "details": {
@@ -277,11 +279,12 @@
       "categories": [
         "Linux & Config",
         "Scripting & Automation",
+        "Rust",
         "System Tools"
       ],
       "details": {
-        "fr": "Pas de détails supplémentaires",
-        "en": "No additional details"
+        "fr": "J'ai appris le parsing d'arguments en ligne de commande avec Clap, et j'ai fait du parsing de config custom.",
+        "en": "I learned about CLI argument parsing with Clap and I did some custom config file parsing."
       }
     }
   ]
