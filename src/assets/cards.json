@@ -140,7 +140,7 @@
         "en": "A Hyprland key bindings manager written in C++",
         "fr": "Un gestionnaire de raccourcis clavier pour Hyprland, écrit en C++"
       },
-      "importance": "60",
+      "importance": "14",
       "preview": "./bindings.png",
       "file": "https://github.com/eiiko6/hyprbindings",
       "categories": [
