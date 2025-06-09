@@ -87,14 +87,20 @@ h1 span {
 }
 
 .logo-scroller {
-  width: 800px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  width: 100%;
+  max-width: 745px;
+  min-width: 745px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
   margin-bottom: 20px;
+  padding: 0.6rem 0.2rem;
+  min-width: 180px;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .commandline {
@@ -107,6 +113,10 @@ h1 span {
 @media screen and (max-width: 1200px) {
   .logo-scroller {
     display: none;
+  }
+
+  .commandline {
+    margin-top: 40px;
   }
 
   .content {

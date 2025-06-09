@@ -63,9 +63,10 @@ export default {
   max-width: 700px;
   padding: 1.5rem;
   border-radius: 20px;
-  background-color: rgba(21, 29, 36, 0.5);
+  background-color: rgba(21, 29, 36, 0.4);
   transition: transform 0.3s ease;
   box-sizing: border-box;
+  border: 3px solid #6785bfaa;
 }
 
 .skill-header {

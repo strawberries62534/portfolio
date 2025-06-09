@@ -159,13 +159,13 @@ export default {
   user-select: none;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1100px) {
   #navbar span {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 970px) {
   #navbar {
     backdrop-filter: blur(15px);
   }

@@ -7,12 +7,6 @@
           <img :src="tech.logo" :alt="tech.name" />
         </a>
       </div>
-      <div class="logos">
-        <a v-for="tech in technologies" :key="tech.name + '_duplicate'" :href="tech.url" target="_blank"
-          rel="noopener noreferrer" class="logo">
-          <img :src="tech.logo" :alt="tech.name" />
-        </a>
-      </div>
     </div>
   </div>
 </template>
@@ -24,15 +18,65 @@ export default {
       scrolling: true,
       technologies: [
         { name: "Rust", url: "https://www.rust-lang.org/", logo: "./ferris.png" },
-        { name: "C", url: "https://en.wikipedia.org/wiki/C_(programming_language)", logo: "./c.png" },
-        { name: "Gentoo", url: "https://www.gentoo.org/", logo: "./gentoo.png" },
-        // { name: "Git", url: "https://git-scm.com/", logo: "./git.png" },
-        { name: "Arch-Linux", url: "https://archlinux.org/", logo: "./arch.png" },
-        // { name: "Vue.js", url: "https://vuejs.org/", logo: "./vue.png" },
         { name: "Neovim", url: "https://neovim.io/", logo: "./neovim.png" },
+        { name: "C", url: "https://en.wikipedia.org/wiki/C_(programming_language)", logo: "./c.png" },
+        { name: "Nix", url: "https://nixos.org/", logo: "./nix.png" },
+        { name: "C#", url: "https://dotnet.microsoft.com/en-us/languages/csharp", logo: "./cs.png" },
+        { name: "C++", url: "https://en.wikipedia.org/wiki/C%2B%2B", logo: "./cpp.png" },
+        { name: "Vue", url: "https://vuejs.org/", logo: "./vue.png" },
+        // { name: "Gentoo", url: "https://www.gentoo.org/", logo: "./gentoo.png" },
+        // { name: "Git", url: "https://git-scm.com/", logo: "./git.png" },
+        // { name: "Arch-Linux", url: "https://archlinux.org/", logo: "./arch.png" },
       ],
     };
   },
+  mounted() {
+    this.$nextTick(() => {
+      this.applyBackgrounds();
+    });
+  },
+  methods: {
+    applyBackgrounds() {
+      this.technologies.forEach((_, index) => {
+        const img = this.$el.querySelectorAll('.logo img')[index];
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        img.onload = () => {
+          canvas.width = img.naturalWidth;
+          canvas.height = img.naturalHeight;
+          ctx.drawImage(img, 0, 0);
+          const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+          let r = 0, g = 0, b = 0, count = 0;
+          for (let i = 0; i < data.length; i += 4 * 10) {
+            r += data[i];
+            g += data[i + 1];
+            b += data[i + 2];
+            count++;
+          }
+          r = Math.floor(r / count);
+          g = Math.floor(g / count);
+          b = Math.floor(b / count);
+
+          const mid = 100;
+
+          const lerp = (start, end, t) => start + (end - start) * t;
+
+          const factor = 0.5;
+
+          r = Math.floor(lerp(r, mid, factor));
+          g = Math.floor(lerp(g, mid, factor));
+          b = Math.floor(lerp(b, mid, factor));
+
+          const gradient = `linear-gradient(145deg, rgba(${r}, ${g}, ${b}, 1), rgba(${r}, ${g}, ${b}, 0))`;
+
+          img.parentElement.style.background = gradient;
+          img.parentElement.style.borderRadius = '15px';
+          img.parentElement.style.overflow = 'hidden';
+        };
+      });
+    }
+  }
 };
 </script>
 
@@ -40,10 +84,8 @@ export default {
 .logos-container {
   position: relative;
   display: flex;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
-  height: 150px;
   background-color: rgba(21, 29, 36, 0.4);
   border: 3px solid #6785bf55;
   border-radius: 18px;
@@ -52,35 +94,36 @@ export default {
 .logos-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  gap: 5.5rem;
 }
 
 .logos {
-  position: absolute;
+  position: relative;
   display: flex;
-  gap: 0.5rem;
-  animation: scroll 10s linear infinite;
-}
-
-.logos:nth-child(1) {
-  left: 0;
-}
-
-.logos:nth-child(2) {
-  left: 100%;
-  margin-left: 5.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-  max-height: 100px;
-  height: auto;
-  width: 100px;
-  object-fit: contain;
-  transition: transform 1s;
-  border: 3px solid #6785bf55;
-  border-radius: 15px;
+  height: 100%;
+  width: auto;
+  transition: transform 0.4s;
   padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #00000000 0%, #000000ff 500%);
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 3px solid #556F95;
+  border-radius: 15px;
 }
 
 .logo:hover img {
