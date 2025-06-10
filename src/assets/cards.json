@@ -105,6 +105,7 @@
       "file": "https://github.com/eiiko6/dotswitch",
       "categories": [
         "Linux & Config",
+        "System Tools",
         "Rust",
         "Scripting & Automation"
       ],
@@ -263,7 +264,7 @@
       ],
       "details": {
         "fr": "<h3>Contexte</h3>Nous avons extrait les données d'études récupérées en ligne. Mon groupe de 4 personnes a choisi d'analyser des données sur les troubles mentaux.<h3>Objectifs</h3>Nous devions créer une base de données pour tout organiser.<br/>Puis nous avons réalisé une analyse complète avec les outils Pandas, SQLalchemy et Matplotlib en Python.<h3>Livrables</h3>Nous avons généré des graphes de différents types.<br/>Le tout a été présenté lors d'un oral en anglais.<h3>Compétences acquises</h3>J'ai appris à concevoir une base de données, à travailler en équipe, à générer et interpréter différents types de représentations graphiques...",
-        "en": "<h3>Context</h3>We extracted study data gathered online. My group of four people chose to analyze data on mental health disorders.<h3>Objectives</h3>We had to create a database to organize everything.<br/>Then, we carried out a complete analysis using Pandas, SQLAlchemy, and Matplotlib in Python.<h3>Deliverables</h3>We generated various types of graphs.<br/>Everything was presented during an oral presentation in English.<h3>Skills acquired</h3>I learned how to design a database, work in a team, and generate and interpret different types of graphical representations..."
+        "en": "<h3>Context</h3>We extracted study data gathered online. My group of four people chose to analyze data on mental health disorders.<h3>Goals</h3>We had to create a database to organize everything.<br/>Then, we carried out a complete analysis using Pandas, SQLAlchemy, and Matplotlib in Python.<h3>Deliverables</h3>We generated various types of graphs.<br/>Everything was presented during an oral presentation in English.<h3>Skills acquired</h3>I learned how to design a database, work in a team, and generate and interpret different types of graphical representations..."
       }
     },
     {
@@ -285,6 +286,25 @@
       "details": {
         "fr": "J'ai appris le parsing d'arguments en ligne de commande avec Clap, et j'ai fait du parsing de config custom.",
         "en": "I learned about CLI argument parsing with Clap and I did some custom config file parsing."
+      }
+    },
+    {
+      "id": 16,
+      "name": "Rust SQL Trainer",
+      "description": {
+        "en": "A CLI program that provides exercises on SQL queries.",
+        "fr": "Un programme en CLI qui propose des exercices sur des requêtes SQL."
+      },
+      "importance": "49",
+      "preview": "./rsqlt.png",
+      "file": "https://github.com/eiiko6/rustsqltrainer",
+      "categories": [
+        "Rust",
+        "Data & Analysis"
+      ],
+      "details": {
+        "fr": "<h3>Contexte</h3>J'ai utilisé mes connaissances en SQL pour créer une solution à mes révisions avant les examens finaux.<h3>Compétences acquises</h3>J'avais appris les bases de la gestion de base de données depuis un wrapper python: c'est tout aussi simple en Rust!<br/>J'ai véritablement innové pour ce projet, je voulais que ce soit un moyen accessible de s'entrainer en SQL, sans avoir à setup un gros server postgres comme on a appris en cours.",
+        "en": "<h3>Context</h3>I used my modest knowledge in databases to create a solution to help with studying before final exams.<h3>Skills Acquired</h3>I had learned the basics of database management through SqlAlchemy in Python: it's just as simple in Rust!<br/>I truly innovated for this project—I wanted it to be an accessible way to practice SQL, without having to set up a heavy PostgreSQL server like we were taught in class."
       }
     }
   ]
